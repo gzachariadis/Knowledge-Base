@@ -1,8 +1,131 @@
-site_name: My MkDocs Material Documentation
+site_name: Knowledge Base
 site_url: https://sitename.example
 theme:
   name: material
+  font: 
+    text: Comfortaa
+    code: Red Hat Mono
+  icon:
+    logo: fontawesome/solid/w
   palette:
     scheme: slate
+  plugins:
+    - typeset
+
+nav:
+  
+  - Start Here: index.md
+  
+  - Getting Online:
+    - Service Providers: getting-online/service-providers/index.md
+    - Routers:
+      - Operating Systems:
+        - OpenWRT: getting-online/routers/operating-systems/openwrt/index.md
+      - Proposed Models: getting-online/routers/proposed-models/index.md
+    - Virtual Private Networks:
+      - Providers: getting-online/virtual-private-networks/providers/index.md
+  - Devices:
+    - Phone &#35;1:
+      - Choosing a Device: docs/devices/android/choosing-a-device/phone#1.md
+      - Subscriber ID Module (SIM): 
+        - Providers: docs/devices/android/deciding-on-a-sim/providers/index.md
+        - Types: docs/devices/android/deciding-on-a-sim/types/index.md
+      - Operating System:
+        - GrapheneOS: docs/devices/android/choosing-an-operating-system/grapheneos.md
+      - Applications:
+        - Core Device Functionality:
+          - Application Stores: docs/devices/android/applications/core-device-functionality/application-stores/index.md
+          - Browser: docs/devices/android/applications/core-device-functionality/browser/index.md
+          - Calendar: docs/devices/android/applications/calendar/index.md
+          - Clock & Alarm: docs/devices/android/applications/core-device-functionality/clock-alarm/index.md
+          - Contacts Management: docs/devices/android/applications/core-device-functionality/contact-management/index.md
+          - File Manager: docs/devices/android/applications/core-device-functionality/file-manager/index.md
+          - Keyboard: docs/devices/android/applications/core-device-functionality/keyboard/index.md
+          - Launcher: docs/devices/android/applications/core-device-functionality/launcher/index.md
+          - Phone: docs/devices/android/applications/core-device-functionality/phone/index.md
+          - Text Messaging: docs/devices/android/applications/core-device-functionality/sms-messaging/index.md   
+        - Media Access:
+          - Audiobooks: docs/devices/android/applications/media-access/audiobooks/index.md
+          - Book Readers: docs/devices/android/applications/media-access/book-readers/index.md
+          - File Viewer: docs/devices/android/applications/media-access/file-viewer/graphene-viewer.md
+          - Music Player: docs/devices/android/applications/media-access/music-players/index.md
+          - Photo Gallery: docs/devices/android/applications/media-access/photo-gallery
+          - Podcasts: docs/devices/android/applications/media-access/podcasts/antennapod.md
+          - Video Players: docs/devices/android/applications/media-access/video-players/index.md
+        - Social Media:
+          - Micro-blogging:
+            - BlueSky: docs/devices/android/applications/social-media/categories/micro-blogging/bluesky.md
+            - Mastradon: docs/devices/android/applications/social-media/categories/micro-blogging/mastradon.md
+          - Visual Content:
+            - Instagram: docs/devices/android/applications/social-media/categories/picture-sharing/instagram.md
+          - Video Publishing:
+            - YouTube: docs/devices/android/applications/social-media/categories/video-sharing/youtube.md
+        - Private Messaging:
+          - Signal: docs/devices/android/applications/private-messaging/signal.md
+        - Device Security:
+          - Antivirus: docs/devices/android/applications/device-security/malware-scanner/index.md
+          - Application Manager: docs/devices/android/applications/device-security/application-manager/index.md
+          - Background Activities Management: docs/devices/android/applications/device-security/background-activities-management/index.md
+          - Firewall: docs/devices/android/applications/device-security/firewall-client/index.md
+          - Permission Manager: docs/devices/android/applications/device-security/permission-manager/index.md
+          - Tracker Protection: docs/devices/android/applications/device-security/tracker-protection/index.md
+          - Virtual Private Network Clients (VPNs): docs/devices/android/applications/device-security/virtual-private-network-client/index.md
+          - Work Profile: docs/devices/android/applications/device-security/work-profile/index.md
+        - Email Clients:
+          - FairEmail: docs/devices/android/applications/email-clients/fairmail.md
+          - ProtonMail: docs/devices/android/applications/email-clients/protonmail.md
+          - Thunderbird: docs/devices/android/applications/email-clients/thunderbird.md
+          - Tutanota: docs/devices/android/applications/email-clients/tutanota.md
+        - Password Management:
+          - Bitwarden: docs/devices/android/applications/password-management/bitwarden.md
+        - Notes: docs/devices/android/applications/notes/index.md
+        - Metadata Manipulation: docs/devices/android/applications/metadata-manipulation/index.md
+        - Navigation & Maps: docs/devices/android/applications/navigation-and-maps/index.md
+        - Two-Factor Authentication:
+          - Aegis: docs/devices/android/applications/two-factor-authentication/aegis.md
+          - Yubico: docs/devices/android/applications/two-factor-authentication/yubico.md
+        - System Maintenance:
+          - Backup & Recovery: docs/devices/android/applications/system-maintenance/backup-recovery/index.md
+          - Free-Space Eraser: docs/devices/android/applications/system-maintenance/free-space-eraser/index.md
+        - Notification Management: docs/devices/android/applications/notification-management/buzz-kill.md
+      - System Settings:
+        - Developer Options: docs/devices/android/system-settings/developer-options/index.md
+  - Online Accounts:
+    - Creation:
+      - Email: docs/online-accounts/creating/email.md
+      - Usernames: docs/online-accounts/creating/usernames.md
+      - Passwords: docs/online-accounts/creating/passwords.md
+      - Phone Numbers: docs/online-accounts/creating/phone-numbers.md
+      - Personal Information: docs/online-accounts/creating/personal-info.md
+    - Authentication:
+      - Passwordless Authentication:
+        - Passkeys: online-accounts/authenticating/passwordless-authentication/passkeys.md
+      - <i class="iconoir-tower-check"></i>&nbsp; Two-Factor (2FA) Authentication:
+        - Methods:
+          - <i class="fa-solid fa-qrcode"></i>&nbsp;&nbsp;&nbsp; Authentication Apps: docs/online-accounts/authenticating/two-factor-authentication/methods/authenticator-apps.md
+          - <i class="iconoir-mail"></i>&nbsp;&nbsp;&nbsp; Email Verification: docs/online-accounts/authenticating/two-factor-authentication/methods/email-links.md
+          - <i class="fa-solid fa-fingerprint"></i>&nbsp;&nbsp;&nbsp; Hardware Keys: docs/online-accounts/authenticating/two-factor-authentication/methods/hardware-keys.md
+          - <i class="mdi mdi-key-chain-variant"></i>&nbsp;&nbsp;&nbsp; Password Managers: docs/online-accounts/authenticating/two-factor-authentication/methods/password-managers.md
+          - <i class="iconoir-app-notification"></i>&nbsp;&nbsp;&nbsp; Push Notifications: docs/online-accounts/authenticating/two-factor-authentication/methods/push-notifications.md
+          - <i class="iconoir-chat-lines"></i>&nbsp;&nbsp;&nbsp; SMS Authentication: docs/online-accounts/authenticating/two-factor-authentication/methods/sms-authentication.md
+    - Managing Credentials:
+      - Hardware Encrypted USB Drives: managing-credentials/options/hardware-encrypted-usb-drives/index.md
+      - Hardware Keys: managing-credentials/options/hardware-keys/index.md
+      - Password Managers:
+        - Bitwarden: managing-credentials/options/password-managers/bitwarden.md
 extra_css:
   - css/main.css
+  - https://cdn.jsdelivr.net/gh/iconoir-icons/iconoir@main/css/iconoir.css
+  - https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css
+  - https://cdn.materialdesignicons.com/6.4.95/css/materialdesignicons.min.css
+  - https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css
+  - https://cdn.jsdelivr.net/npm/@primer/octicons@latest/dist/octicons.css
+  - https://unpkg.com/feather-icons
+
+markdown_extensions:
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - md_in_html
+  - pymdownx.blocks.caption
