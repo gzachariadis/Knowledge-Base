@@ -31,3 +31,9 @@
 ```
 <i class="ri-demo"></i>
 ```
+
+- [Boxicons](https://boxicons.com/)
+
+```
+<i class='bx bxl-demo'></i> 
+```
