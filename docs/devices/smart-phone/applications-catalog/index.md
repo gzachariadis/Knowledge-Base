@@ -1,0 +1,60 @@
+<i class="hgi-stroke hgi-grid-view"></i> Applications Catalog
+
+- <i class="hgi-stroke hgi-bookmark-01"></i> Core Functionality:
+  - <a href="docs/devices/smart-phone/applications-catalog/core-device-functionality/application-stores/f-droid.md"><i class="hgi-stroke hgi-shopping-basket-check-out-01"></i> Application Stores</a>
+  - <i class="hgi-stroke hgi-copy-link"></i> Browser: devices/smart-phone/applications-catalog/core-device-functionality/browsers/choosing-a-browser.md
+  - <i class="hgi-stroke hgi-calendar-03"></i> Calendar: devices/smart-phone/applications-catalog/core-device-functionality/calendars/choosing-a-calendar-application.md
+  - <i class="hgi-stroke hgi-alarm-clock"></i> Clock & Alarm: devices/smart-phone/applications-catalog/core-device-functionality/clock-alarm/choosing-a-clock-application.md
+  - <i class="hgi-stroke hgi-contact-02"></i> Contacts Management: devices/smart-phone/applications-catalog/core-device-functionality/contact-management/choosing-a-contacts-manager.md
+  - <i class="hgi-stroke hgi-folder-01"></i> File Manager: devices/smart-phone/applications-catalog/core-device-functionality/file-manager/choose-a-file-manager.md
+  - <i class="hgi-stroke hgi-keyboard"></i> Keyboard: devices/smart-phone/applications-catalog/core-device-functionality/keyboard/choose-a-software-keyboard.md
+  - <i class="hgi-stroke hgi-dashboard-square-edit"></i> Launcher: devices/smart-phone/applications-catalog/core-device-functionality/launcher/choose-a-phone-launcher.md
+  - <i class="hgi-stroke hgi-call-ringing-04"></i> Phone: devices/smart-phone/applications-catalog/core-device-functionality/phone/choose-a-dialer.md
+  - <i class="hgi-stroke hgi-mail-add-02"></i> Text Messaging: devices/smart-phone/applications-catalog/core-device-functionality/sms-messaging/choose-an-sms-messaging-application.md
+- <i class="hgi-stroke hgi-security-check"></i> Device Security:
+  - <i class="hgi-stroke hgi-test-tube-01"></i> Antivirus: devices/smart-phone/applications-catalog/device-security/antivirus/index.md
+  - <i class="hgi-stroke hgi-delivery-box-01"></i> Application Managers: devices/smart-phone/applications-catalog/device-security/application-manager/index.md
+  - <i class="hgi-stroke hgi-geometric-shapes-01"></i> Background Activities: devices/smart-phone/applications-catalog/device-security/background-activities-management/index.md
+  - <i class="hgi-stroke hgi-firewall"></i> Firewall Clients: devices/smart-phone/applications-catalog/device-security/firewall-clients/index.md
+  - <i class="hgi-stroke hgi-legal-01"></i> Permission Managers: devices/smart-phone/applications-catalog/device-security/permission-manager/index.md
+  - <i class="hgi-stroke hgi-pacman-01"></i> Tracker Protection: devices/smart-phone/applications-catalog/device-security/tracker-protection/index.md
+  - <i class="hgi-stroke hgi-cloud-server"></i> Virtual Private Network Clients (VPNs): devices/smart-phone/applications-catalog/device-security/virtual-private-network-client/index.md
+  - <i class="hgi-stroke hgi-clean"></i> System Cleaner: devices/smart-phone/applications-catalog/device-security/system-cleaner/index.md
+  - <i class="hgi-stroke hgi-suit-01"></i> Work Profile: devices/smart-phone/applications-catalog/device-security/work-profile/index.md
+- <i class="hgi-stroke hgi-tools"></i> System Maintenance:
+  - <i class="hgi-stroke hgi-database-sync-01"></i> Backup & Recovery: devices/smart-phone/applications-catalog/system-maintenance/backup-recovery/index.md
+  - <i class="hgi-stroke hgi-eraser"></i> Free-Space Eraser: devices/smart-phone/applications-catalog/system-maintenance/free-space-eraser/index.md
+- <i class="hgi-stroke hgi-playlist-03"></i> Media Playback:
+  - <i class="hgi-stroke hgi-audio-book-03"></i> Audiobooks: devices/smart-phone/applications-catalog/media-playback/audiobooks/applications-index.md
+  - <i class="hgi-stroke hgi-book-open-02"></i> Book Readers: devices/smart-phone/applications-catalog/media-playback/book-readers/applications-index.md
+  - <i class="hgi-stroke hgi-folder-file-storage"></i> File Viewer: devices/smart-phone/applications-catalog/media-playback/file-viewer/applications-index.md
+  - <i class="hgi-stroke hgi-music-note-01"></i> Music Player: devices/smart-phone/applications-catalog/media-playback/music-players/applications-index.md
+  - <i class="hgi-stroke hgi-google-photos"></i> Photo Gallery: devices/smart-phone/applications-catalog/media-playback/photo-gallery/applications-index.md
+  - <i class="hgi-stroke hgi-airpod-03"></i> Podcasts: devices/smart-phone/applications-catalog/media-playback/podcasts/applications-index.md
+  - <i class="hgi-stroke hgi-flim-slate"></i> Video Player: devices/smart-phone/applications-catalog/media-playback/video-players/applications-index.md
+- <i class="iconoir-hashtag"></i> Social Media:
+  - <i class="hgi-stroke hgi-quill-write-02"></i> Micro-blogging:
+    - <i class="iconoir-rss-feed-tag"></i> BlueSky: devices/smart-phone/applications-catalog/social-media/categories/micro-blogging/bluesky.md
+    - <i class="iconoir-mastodon"></i> Mastradon: devices/smart-phone/applications-catalog/social-media/categories/micro-blogging/mastradon.md
+  - <i class="hgi-stroke hgi-ai-image"></i> Visual Content:
+    - <i class="hgi-stroke hgi-instagram"></i> Instagram: devices/smart-phone/applications-catalog/social-media/categories/visual-content/instagram.md
+  - <i class="hgi-stroke hgi-video-02"></i> Video Publishing:
+    - <i class="hgi-stroke hgi-tv-01"></i> YouTube: devices/smart-phone/applications-catalog/social-media/categories/video-publishing/youtube.md
+- <i class="hgi-stroke hgi-comment-01"></i> Communication:
+  - <i class="hgi-stroke hgi-message-multiple-02"></i> Private Messaging:
+    - <i class="hgi-stroke hgi-signal"></i> Signal: devices/smart-phone/applications-catalog/private-messaging/signal.md
+  - <i class="hgi-stroke hgi-mail-at-sign-01"></i> Email Clients:
+    - FairEmail: devices/smart-phone/applications-catalog/email-clients/fairmail.md
+    - ProtonMail: devices/smart-phone/applications-catalog/email-clients/protonmail.md
+    - Thunderbird: devices/smart-phone/applications-catalog/email-clients/thunderbird.md
+    - Tutanota: devices/smart-phone/applications-catalog/email-clients/tutanota.md
+- <i class="hgi-stroke hgi-credit-card-pos"></i> Credential Management:
+  - <i class="hgi-stroke hgi-square-lock-password"></i> Password Managers:
+    - Bitwarden: devices/smart-phone/applications-catalog/password-management/bitwarden.md
+  - <i class="hgi-stroke hgi-victory-finger-03"></i> Two-Factor Authentication:
+    - Aegis: devices/smart-phone/applications-catalog/two-factor-authentication/aegis.md
+    - Yubico Authenticator: devices/smart-phone/applications-catalog/two-factor-authentication/yubico.md
+- <i class="hgi-stroke hgi-notification-02"></i> Notification Management: devices/smart-phone/applications-catalog/notification-management/applications-index.md
+- <i class="hgi-stroke hgi-edit-01"></i> Notes: devices/smart-phone/applications-catalog/notes/applications-index.md
+- <i class="hgi-stroke hgi-tic-tac-toe"></i> Metadata Manipulation: devices/smart-phone/applications-catalog/metadata-manipulation/applications-index.md
+- <i class="hgi-stroke hgi-maps-search"></i> Navigation & Maps: devices/smart-phone/applications-catalog/navigation-and-maps/applications-index.md

@@ -1,9 +1,3 @@
-# 
-
-
-
-
-
 
 ### Packs
 
@@ -11,7 +5,7 @@
 - [IcoNoir](https://iconoir.com/)
 
 ```
-<i class="iconoir-demo"></i>&nbsp;
+<i class="iconoir-demo"></i>
 ```
 
 - [Material Design](https://pictogrammers.com/library/mdi/)
@@ -36,4 +30,28 @@
 
 ```
 <i class='bx bxl-demo'></i> 
+```
+
+### Plugins
+
+
+- https://github.com/Jackiexiao/mkdocs-roamlinks-plugin
+- https://github.com/mkdocstrings/autorefs
+
+
+```
+
+
+
+     
+         
+        
+        
+        
+       
+        
+        
+    
+    
+
 ```

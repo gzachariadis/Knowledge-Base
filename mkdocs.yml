@@ -1,4 +1,4 @@
-site_name: Knowledge Base
+site_name: Explained Simply
 site_url: https://sitename.example
 theme:
   name: material
@@ -13,110 +13,39 @@ theme:
     - typeset
 
 nav:
-  
-  - Start Here: index.md
-  
-  - Getting Online:
-    - <i class="hgi-stroke hgi-satellite-01"></i> Service Providers: getting-online/service-providers/index.md
-    - Routers:
-      - Operating Systems:
-        - OpenWRT: getting-online/routers/operating-systems/openwrt/index.md
-      - Proposed Models: getting-online/routers/proposed-models/index.md
-    - Virtual Private Networks:
-      - Providers: getting-online/virtual-private-networks/providers/index.md
-  - Devices:
+
+  - <i class="hgi-stroke hgi-book-open-01"></i> Start Here: start-here/index.md
+  - <i class="hgi-stroke hgi-cloud"></i> Getting Online:
+      - <i class="hgi-stroke hgi-corporate"></i> Service Providers: getting-online/service-providers/choosing-a-provider.md
+      - <i class="hgi-stroke hgi-internet-antenna-03"></i> Long Range Antennas: getting-online/equipment/long-range-antennas/antenna-01.md
+      - <i class="hgi-stroke hgi-router-02"></i> Gateways: getting-online/equipment/gateways/index.md
+      - <i class="hgi-stroke hgi-wifi-lock"></i> Access Points: getting-online/equipment/access-points/access-points-01.md
+      - <i class="hgi-stroke hgi-fire-security"></i> Hardware Firewalls: getting-online/hardware-firewalls/choosing-a-hardware-firewall.md
+      - <i class="hgi-stroke hgi-computer-cloud"></i> Virtual Private Networks (VPNs): getting-online/virtual-private-networks/index.md
+  - <i class="hgi-stroke hgi-wrench-01"></i> Hardware:
     - <i class="hgi-stroke hgi-smartphone-wifi"></i> Smartphone:
-      - <i class="hgi-stroke hgi-shopping-bag-03"></i> Choosing a Device Model: docs/devices/android/choosing-a-device/phone#1.md
-      - <i class="hgi-stroke hgi-simcard-01"></i> Subscriber ID Module (SIM): 
-        - Providers: docs/devices/android/deciding-on-a-sim/providers/index.md
-        - Types: docs/devices/android/deciding-on-a-sim/types/index.md
-      - <i class="hgi-stroke hgi-layers-02"></i> Operating System:
-        - <i class="fa-brands fa-android"></i> GrapheneOS: docs/devices/android/choosing-an-operating-system/grapheneos.md
-      - <i class="hgi-stroke hgi-grid-view"></i> Applications:
-        - <i class="hgi-stroke hgi-sparkles"></i> Core Device Functionality:
-          - <i class="fa-brands fa-google-play"></i> Application Stores: docs/devices/android/applications/core-device-functionality/application-stores/index.md
-          - <i class="hgi-stroke hgi-copy-link"></i> Browser: docs/devices/android/applications/core-device-functionality/browser/index.md
-          - <i class="hgi-stroke hgi-calendar-03"></i> Calendar: docs/devices/android/applications/calendar/index.md
-          - <i class="hgi-stroke hgi-alarm-clock"></i> Clock & Alarm: docs/devices/android/applications/core-device-functionality/clock-alarm/index.md
-          - <i class="hgi-stroke hgi-contact-02"></i> Contacts Management: docs/devices/android/applications/core-device-functionality/contact-management/index.md
-          - <i class="hgi-stroke hgi-folder-01"></i> File Manager: docs/devices/android/applications/core-device-functionality/file-manager/index.md
-          - <i class="hgi-stroke hgi-keyboard"></i> Keyboard: docs/devices/android/applications/core-device-functionality/keyboard/index.md
-          - <i class="hgi-stroke hgi-dashboard-square-edit"></i> Launcher: docs/devices/android/applications/core-device-functionality/launcher/index.md
-          - <i class="hgi-stroke hgi-call-ringing-04"></i> Phone: docs/devices/android/applications/core-device-functionality/phone/index.md
-          - <i class="hgi-stroke hgi-mail-add-02"></i> Text Messaging: docs/devices/android/applications/core-device-functionality/sms-messaging/index.md   
-        - <i class="hgi-stroke hgi-security-check"></i> Device Security:
-          - <i class="hgi-stroke hgi-test-tube-01"></i> Antivirus: docs/devices/android/applications/device-security/malware-scanner/index.md
-          - <i class="hgi-stroke hgi-delivery-box-01"></i> Application Manager: docs/devices/android/applications/device-security/application-manager/index.md
-          - <i class="hgi-stroke hgi-geometric-shapes-01"></i> Background Activities: docs/devices/android/applications/device-security/background-activities-management/index.md
-          - <i class="hgi-stroke hgi-firewall"></i> Firewall: docs/devices/android/applications/device-security/firewall-client/index.md
-          - <i class="hgi-stroke hgi-legal-01"></i> Permission Manager: docs/devices/android/applications/device-security/permission-manager/index.md
-          - <i class="hgi-stroke hgi-pacman-01"></i> Tracker Protection: docs/devices/android/applications/device-security/tracker-protection/index.md
-          - <i class="hgi-stroke hgi-cloud-server"></i> Virtual Private Network Clients (VPNs): docs/devices/android/applications/device-security/virtual-private-network-client/index.md
-          - <i class="hgi-stroke hgi-clean"></i> System Cleaner: docs/devices/android/applications/device-security/system-cleaner/index.md
-          - <i class="hgi-stroke hgi-suit-01"></i> Work Profile: docs/devices/android/applications/device-security/work-profile/index.md
-        - <i class="hgi-stroke hgi-tools"></i> System Maintenance:
-          - <i class="hgi-stroke hgi-database-sync-01"></i> Backup & Recovery: docs/devices/android/applications/system-maintenance/backup-recovery/index.md
-          - <i class="hgi-stroke hgi-eraser"></i> Free-Space Eraser: docs/devices/android/applications/system-maintenance/free-space-eraser/index.md
-        - <i class="hgi-stroke hgi-playlist-02"></i> Media Playback:
-          - <i class="hgi-stroke hgi-audio-book-03"></i> Audiobooks: docs/devices/android/applications/media-access/audiobooks/index.md
-          - <i class="hgi-stroke hgi-book-open-02"></i> Book Readers: docs/devices/android/applications/media-access/book-readers/index.md
-          - <i class="hgi-stroke hgi-folder-file-storage"></i> File Viewer: docs/devices/android/applications/media-access/file-viewer/graphene-viewer.md
-          - <i class="hgi-stroke hgi-music-note-03"></i> Music Player: docs/devices/android/applications/media-access/music-players/index.md
-          - <i class="hgi-stroke hgi-google-photos"></i> Photo Gallery: docs/devices/android/applications/media-access/photo-gallery
-          - <i class="hgi-stroke hgi-airpod-03"></i> Podcasts: docs/devices/android/applications/media-access/podcasts/antennapod.md
-          - <i class="hgi-stroke hgi-flim-slate"></i> Video Player: docs/devices/android/applications/media-access/video-players/index.md
-        - <i class="hgi-stroke hgi-checkmark-badge-04"></i> Social Media:
-          - <i class="hgi-stroke hgi-quill-write-02"></i> Micro-blogging:
-            - BlueSky: docs/devices/android/applications/social-media/categories/micro-blogging/bluesky.md
-            - Mastradon: docs/devices/android/applications/social-media/categories/micro-blogging/mastradon.md
-          - <i class="hgi-stroke hgi-ai-image"></i> Visual Content:
-            - <i class="hgi-stroke hgi-instagram"></i> Instagram: docs/devices/android/applications/social-media/categories/picture-sharing/instagram.md
-          - <i class="hgi-stroke hgi-tv-01"></i> Video Publishing:
-            - <i class="hgi-stroke hgi-youtube"></i> YouTube: docs/devices/android/applications/social-media/categories/video-sharing/youtube.md
-        - <i class="hgi-stroke hgi-comment-01"></i> Communication:
-          - <i class="hgi-stroke hgi-message-multiple-02"></i> Private Messaging:
-            - <i class="hgi-stroke hgi-signal"></i> Signal: docs/devices/android/applications/private-messaging/signal.md
-          - <i class="hgi-stroke hgi-mail-at-sign-01"></i> Email Clients:
-            - FairEmail: docs/devices/android/applications/email-clients/fairmail.md
-            - ProtonMail: docs/devices/android/applications/email-clients/protonmail.md
-            - Thunderbird: docs/devices/android/applications/email-clients/thunderbird.md
-            - Tutanota: docs/devices/android/applications/email-clients/tutanota.md
-        - <i class="hgi-stroke hgi-credit-card-pos"></i> Credential Management:
-          - <i class="hgi-stroke hgi-square-lock-password"></i> Password Managers:
-            - Bitwarden: docs/devices/android/applications/password-management/bitwarden.md
-          - Two-Factor Authentication:
-            - Aegis: docs/devices/android/applications/two-factor-authentication/aegis.md
-            - Yubico Authenticator: docs/devices/android/applications/two-factor-authentication/yubico.md
-        - <i class="hgi-stroke hgi-notification-02"></i> Notification Management: docs/devices/android/applications/notification-management/buzz-kill.md
-        - <i class="hgi-stroke hgi-edit-01"></i> Notes: docs/devices/android/applications/notes/index.md
-        - <i class="hgi-stroke hgi-file-validation"></i> Metadata Manipulation: docs/devices/android/applications/metadata-manipulation/index.md
-        - <i class="hgi-stroke hgi-maps-search"></i> Navigation & Maps: docs/devices/android/applications/navigation-and-maps/index.md
-      - System Settings:
-        - Developer Options: docs/devices/android/system-settings/developer-options/index.md
-  - Online Accounts:
-    - Account Creation:
-      - <i class="hgi-stroke hgi-mail-at-sign-01"></i> Email: docs/online-accounts/creating/email.md
-      - <i class="hgi-stroke hgi-user"></i> Username: docs/online-accounts/creating/usernames.md
-      - <i class="hgi-stroke hgi-lock-key"></i> Passwords: docs/online-accounts/creating/passwords.md
-      - <i class="hgi-stroke hgi-signal-medium-01"></i> Phone Numbers: docs/online-accounts/creating/phone-numbers.md
-      - <i class="hgi-stroke hgi-database-import"></i> Personal Information: docs/online-accounts/creating/personal-info.md
-    - Authentication Methods:
-      - Passwordless Authentication:
-        - Passkeys: online-accounts/authenticating/passwordless-authentication/passkeys.md
-      - Two-Factor (2FA) Authentication:
-        - <i class="hgi-stroke hgi-command"></i> Authentication Apps: docs/online-accounts/authenticating/two-factor-authentication/methods/authenticator-apps.md
-        - <i class="iconoir-mail"></i> Email Verification: docs/online-accounts/authenticating/two-factor-authentication/methods/email-links.md
-        - <i class="fa-solid fa-fingerprint"></i> Hardware Keys: docs/online-accounts/authenticating/two-factor-authentication/methods/hardware-keys.md
-        - <i class="mdi mdi-key-chain-variant"></i> Password Managers: docs/online-accounts/authenticating/two-factor-authentication/methods/password-managers.md
-        - <i class="iconoir-app-notification"></i> Push Notifications: docs/online-accounts/authenticating/two-factor-authentication/methods/push-notifications.md
-        - <i class="iconoir-chat-lines"></i> SMS Authentication: docs/online-accounts/authenticating/two-factor-authentication/methods/sms-authentication.md
-  - Managing Credentials:
-    - <i class="hgi-stroke hgi-hard-drive"></i> Hardware Encrypted Drives: managing-credentials/options/hardware-encrypted-usb-drives/index.md
-    - <i class="mdi mdi-onepassword"></i> Hardware Security Keys: managing-credentials/options/hardware-keys/index.md
-    - Password Managers:
-      - Bitwarden: managing-credentials/options/password-managers/bitwarden.md
+      - <i class="hgi-stroke hgi-shopping-bag-03"></i> Phone Models: devices/smart-phone/phone-models/choosing-a-device.md
+      - <i class="hgi-stroke hgi-simcard-01"></i> Subscriber ID Module (SIM): devices/smart-phone/choosing-a-sim/index.md
+      - <i class="hgi-stroke hgi-layers-02"></i> Operating System: devices/smart-phone/operating-systems/choosing-an-operating-system.md
+      - <i class="hgi-stroke hgi-grid-view"></i> Applications Catalog: devices/smart-phone/applications-catalog/index.md
+      - <i class="hgi-stroke hgi-cpu-settings"></i> System Settings: devices/smart-phone/system-settings/index.md
+  - <i class="hgi-stroke hgi-user"></i> Accounts:
+    - Data:
+      - <i class="hgi-stroke hgi-mail-at-sign-01"></i> Email: accounts/creating/email.md
+      - <i class="hgi-stroke hgi-user-status"></i> Username: accounts/creating/usernames.md
+      - <i class="hgi-stroke hgi-lock-key"></i> Passwords: accounts/creating/passwords.md
+      - <i class="hgi-stroke hgi-signal-medium-01"></i> Phone Numbers: accounts/creating/phone-numbers.md
+      - <i class="hgi-stroke hgi-database-import"></i> Personal Information: accounts/creating/personal-info.md
+    - Authentication:
+      - Passwordless Authentication: accounts/authenticating/passwordless-authentication/home.md
+      - Two-Factor (2FA) Authentication: accounts/authenticating/two-factor-authentication/home.md
+  - OPSec:
+    - Managing Credentials:
+      - <i class="hgi-stroke hgi-hard-drive"></i> Hardware Encrypted Drives: managing-credentials/options/hardware-encrypted-usb-drives/index.md
+      - <i class="hgi-stroke hgi-lock-key"></i> Hardware Security Keys: managing-credentials/options/hardware-keys/index.md
+      - <i class="hgi-stroke hgi-circle-password"></i> Password Managers: managing-credentials/options/password-managers/home.md
 extra_css:
-  - css/main.css
+  - assets/css/main.css
   - https://cdn.jsdelivr.net/gh/iconoir-icons/iconoir@main/css/iconoir.css
   - https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css
   - https://cdn.materialdesignicons.com/6.4.95/css/materialdesignicons.min.css
