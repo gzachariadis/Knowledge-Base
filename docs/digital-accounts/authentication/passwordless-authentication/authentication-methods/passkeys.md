@@ -1,20 +1,12 @@
 # <i class="hgi-stroke hgi-lock-key"></i> Passkeys
 
+> A passkey is a type of digital key used to log into websites and apps, passkeys use your device (like your phone or computer) to securely authenticate your identity. 
+
+## Introduction
+
 Passkeys are a newer, more secure way to log in to services without relying on passwords. The [FIDO Alliance](https://fidoalliance.org/), responsible for the standard, considers it the next step towards a passwordless future. An improvement to the current system; or is it?
 
 Unlike the traditional passwords, passkeys are generated using **public-key asymmetric cryptography**. In order to prove your identity, instead of typing in a password, you now use your private-key to authenticate your identity to a platform.
-
-In this article, we’ll explain all about
-
-- what passkeys are
-- why they are considered an evolution to passwords
-- what are we to gain by switching
-
-and a lot more...
-
-## Definition
-
-A passkey is a type of digital key used to log into websites and apps, passkeys use your device (like your phone or computer) to securely authenticate your identity. 
 
 ## How does it work?
 
@@ -45,15 +37,15 @@ Lorem Ipsum
 
 #### Features
 
-- Backup, Backup, Backup — Loss or wipe of a device, can result in being **locked out**. Always have a backup of your keys, many companies suggest you **buy them in pairs** for exactly this reason. In case of hardware loss/failure, you will need a recovery method to re-establish your passkeys on a new device, since **they won’t be synced between devices**.
+- <span>Backup, Backup, Backup</span> — Loss or wipe of a device, can result in being **locked out**. Always have a backup of your keys, many companies suggest you **buy them in pairs** for exactly this reason. In case of hardware loss/failure, you will need a recovery method to re-establish your passkeys on a new device, since **they won’t be synced between devices**.
 
-- Separation of Access — You can have separate private keys for separate devices, independently authenticating you using each device’s own private key. This means that, in case your phone is stolen, and it had a private key associated with your Google account, it's not the only key, you can still log into your Google account from your laptop or tablet, which have their own separate private keys and deauthenticate the phone's key. 
+- <span>Separation of Access</span> — You can have separate private keys for separate devices, independently authenticating you using each device’s own private key. This means that, in case your phone is stolen, and it had a private key associated with your Google account, it's not the only key, you can still log into your Google account from your laptop or tablet, which have their own separate private keys and deauthenticate the phone's key. 
   
-- Vulnerability — Syncing your private key across devices makes it convenient to access your accounts from any device, but it also means that if one device is compromised, **all devices using that synchronized private key could be at risk**.
+- <span>Vulnerability</span> — Syncing your private key across devices makes it convenient to access your accounts from any device, but it also means that if one device is compromised, **all devices using that synchronized private key could be at risk**.
 
-- Manual Setup — You will need to manually set up passkeys on each device, which can be more time-consuming and inconvenient. If you use several devices, you may end up with multiple sets of keys to manage.
+- <span>Manual Setup</span> — You will need to manually set up passkeys on each device, which can be more time-consuming and inconvenient. If you use several devices, you may end up with multiple sets of keys to manage.
 
-- Roaming — While the private key is device-bound, **if that device can come into proximity and prove presence**, for example with NFC or Bluetooth, the private key can still be accessed, now you have *“syncing”* between devices, because the private key never leaves the device, but the authenticator module, can *"roam"* &nbsp;between devices. 
+- <span>Roaming</span> — While the private key is device-bound, **if that device can come into proximity and prove presence**, for example with NFC or Bluetooth, the private key can still be accessed, now you have *“syncing”* between devices, because the private key never leaves the device, but the authenticator module, can *"roam"* &nbsp;between devices. 
 
 ### Cloud Syncing
 
@@ -65,25 +57,27 @@ When you set up a passkey on a device, like your phone, the private key is usual
 
 #### Features 
 
-- Encryption — Make sure the private key is always encrypted during syncing, which means it cannot be read or intercepted by anyone; even the service providers (like Apple or Google). Only your devices can decrypt and use the private key to authenticate.
+- <span>Encryption</span> — Make sure the private key is always encrypted during syncing, which means it cannot be read or intercepted by anyone; even the service providers (like Apple or Google). Only your devices can decrypt and use the private key to authenticate.
 
-- Cloud Based — Your private keys are stored on service provider servers, this could result in you being susceptible to theft or hack.
+- <span>Cloud Based</span> — Your private keys are stored on service provider servers, this could result in you being susceptible to theft or hack.
 
-- Ecosystem Bound — Stewardship has to be with someone, if you use iCloud for syncing passkeys, you won’t be able to use it on an Android device. That means, if you are not dependent on a specific ecosystem, you should rely on a third-party for stewardship, something like a Password Manager.
+- <span>Ecosystem Bound</span> — Stewardship has to be with someone, if you use iCloud for syncing passkeys, you won’t be able to use it on an Android device. 
 
-- Shareability — You share one private key between devices, making you susceptible to being locked out. The same way, having a device-bound private-keys does.
+- <span>Stewardship</span> — You rely on a third-party for stewardship
 
-#### Comparison
+- <span>Shareability</span> — You share one private key between devices, making you susceptible to being locked out. The same way, having a device-bound private-keys does.
+
+### Comparison
 
 Device-bound passkeys are fundamentally extremely secure, if managed properly, and that's an if that considers some thought, considering as of writing this, it's still expensive and requires you to take ownership and stewardship of your data.
 
 On the other hand, essentially, what cloud-based does, is it takes away the burden of management from you, trading it in, for compromised privacy and security, you trust your cloud service provider to keep your private-keys away from hackers and always provide maintenance and access to your data, without locking you out. 
 
-The choice is yours.
+<span>The choice is yours.</span>
 
-### Security
+## Security
 
-One of my first questions, researching this was *“How is this an improvement if I am already using a randomly generated non-identifiable password on each site?”* Let’s answer it…
+One of my first questions, researching this was “How is this an improvement if I am already using a randomly generated non-identifiable password on each site?” Let’s answer it…
 
 TLDR; and without getting into technical details, **passkeys are as secure as the method you store them**. 
 
@@ -119,21 +113,21 @@ Because it combines multiple protocols and security features, like having to unl
 
 The aim is to be as hardware-based as possible.
 
-#### Security Features
+### Security Features
 
-- Phishing Protection — Passkeys stop phishing attacks. Since you don’t manually type anything to log in, a hacker can’t trick you into entering your password on a fake website. The authentication process relies on your device, so it only works on the legitimate website or app.
+- <span>Phishing Protection</span> — Passkeys stop phishing attacks. Since you don’t manually type anything to log in, a hacker can’t trick you into entering your password on a fake website. The authentication process relies on your device, so it only works on the legitimate website or app.
 
-- Data Breach Protection — Your private-keys is not susceptible to data breach on the website/app’s server, meaning it can't be stolen to impersonate you, just like a password can.
+- <span>Data Breach Protection</span> — Your private-keys is not susceptible to data breach on the website/app’s server, meaning it can't be stolen to impersonate you, just like a password can.
 
-- Increased Security — RSA cryptographic keys are so long, it’s a virtual impossibility to break them, compared to weak passwords that can be easily cracked.
+- <span>Security</span> — RSA cryptographic keys are so long, it’s a virtual impossibility to break them, compared to weak passwords that can be easily cracked.
 
-#### Privacy Concerns
+### Privacy Concerns
 
 ##### Biometrics
 
 I am not aware of any devices, aka, mobile phones that send biometric data to providers, like Google or another manufacturer. I wholeheartedly believe they are stored on the device, if that's not the case, I would for sure advise against using biometrics to unlock your passkeys, just like I wouldn't store them in the cloud.
 
-But how do biometrics work? Biometrics, are an **indirect method**, for sending your pin or password to the device itself, that's what actually triggers the unlock function. In other words, instead of typing your pin, the fingerprint reader, checks what it has *"on-file"* within local storage, and compares it with what feedback is pressed upon the reader and when those match, the pin is transmitted to the device causing an unlock trigger. **The final action is always a pin code that triggers the unlock, not biometrics.** 
+But how do biometrics work? Biometrics, are an **indirect method**, for sending your pin or password to the device itself, that's what actually triggers the unlock function. In other words, instead of typing your pin, the fingerprint reader, checks what it has "on-file" within local storage, and compares it with what feedback is pressed upon the reader and when those match, the pin is transmitted to the device causing an unlock trigger. **The final action is always a pin code that triggers the unlock, not biometrics.** 
 
 The biometrics are not what you think too, it’s **not a picture of your face or your fingerprint**. The typical fingerprint tech is a Capacitance Grid, the capacitors get charged and emit a value, multiple of those values together form a pattern that’s unique to your finger.
 
@@ -175,7 +169,7 @@ You should be aware that, when opting to initiate passkey creation, through plat
 
 That means, theoretically at least, **platform providers are able to associate you with platforms and your accounts under those platforms**. Not sure, I would want any of those to know which platforms I have accounts with.
 
-## Passwords vs Passkeys - What’s the Difference?
+## Passwords vs Passkeys
 
 Under the current infrastructure, most accounts use a traditional password, which is something **you create**, usually a combination of letters, numbers, and symbols, that you use to log into your accounts. 
 
@@ -187,37 +181,39 @@ Which brings me to my second enemy walkthrough, **companies**. Some companies ar
 
 Currently, both sides of the current infrastructure cause problems, so what do we have to gain by switching? Well, let’s look at the differences...
 
-#### Advantages - against Passwords
+#### Advantages — against Passwords
 
-- Reusability — Passkeys are not reusable.
+- <span>Reusability</span> — Passkeys are not reusable.
 
-- Security — Passwords are crackable, especially weak ones.
+- <span>Security</span> — Passwords are crackable, especially weak ones.
 
-- Knowledge — We have no access to see how our passwords are stored on a website’s/company’s servers, whether they are encrypted, properly secured etc.
+- <span>Knowledge</span> — We have no access to see how our passwords are stored on a company’s servers, whether they are encrypted, properly secured etc.
 
-- Convenience — No retyping passwords and having to change them all the time.
+- <span>Convenience</span> — No retyping passwords and having to change them all the time.
 
-- Enforced Security — Passwords can be stolen in a myriad of ways, even through the mere action of copying them in the clipboard.
+- <span>Enforced Security</span> — Passwords can be stolen in a myriad of ways, even through the mere action of copying them in the clipboard.
 
-- Data Breach Protection — In case of a data breach, passkeys are stored only on your device, so the service/company doesn't store a password to be stolen.
+- <span>Data Breach Protection</span> — In case of a data breach, passkeys are stored only on your device, so the service/company doesn't store a password to be stolen.
 
-- No Reliance on Human Cognition — You don't have to remember your password.
+- <span>No Reliance on Human Cognition</span> — You don't have to remember your password.
 
-#### Cons - against Passwords
+#### Disadvantages — against Passwords
 
-- Hackable — Same as passwords, passkeys are only as safe as the place you store them.
+- <span>Hackable</span> — Same as passwords, passkeys are only as safe as the place you store them.
 
-- Encryption — Not encrypted by default, they can be stolen just like if you write your plain text passwords somewhere.
+- <span>Encryption</span> — Not encrypted by default, they can be stolen just like if you write your plain text passwords somewhere.
 
-- Limited Availability — Currently, only a few providers support them. There’s a few resources right [here]() and [here.](https://github.com/bitwarden/passkeys-index )
+- <span>Limited Availability</span> — Currently, only a few providers support them. There’s a few resources right [here]() and [here.](https://github.com/bitwarden/passkeys-index )
 
-- Non-Compartmentalized (by Default) — Can be stored in the same device as your password & 2FA codes.
+- <span>Non-Compartmentalized (by Default)</span> — Can be stored in the same device as your password & 2FA codes.
 
-### Can an Online Account truly be Passkey-Only Access?
+## F.A.Q.
 
-In theory, **yes**, an online account can be passkey-only access—but in practice? Unluckily. There’s always the need for backup methods, either for account recovery or for setting up new devices. These fallback options are in place to ensure you don’t get locked out.
+#### Can an Online Account truly be Passkey-Only Access?
 
-Another note to consider, is this, almost all major services still require an email address, or a phone number. Why is that so? Couldn’t they all be based on a username? Absolutely, but **why deny the obvious benefit of identifying you through an email address or phone number**. And here's why there isn’t a pass-key only access to most online accounts, most services are KYC (Know Your Customer).
+In theory, **yes**, an online account can be passkey-only access — but **in practice? Unluckily.** There’s always the need for backup methods, either for account recovery or for setting up new devices. These fallback options are in place to ensure you don’t get locked out.
+
+Another note to consider, is this, almost all major services still require an email address, or a phone number. Why is that so? Couldn’t they all be based on a username? Absolutely, but why deny the obvious benefit of **identifying you through an email address or phone number**. And here's why there isn’t a pass-key only access to most online accounts, most services are KYC (Know Your Customer).
 
 That's not the only reason though, people are a factor too; we lose keys, don't backup data, switch phones, forget passwords; that means passkey access-only account
 will almost-never be an option, by major platforms at least, because there will always be a need for account recovery.
@@ -252,11 +248,11 @@ Passkeys basically do the authentication on the device, because in order to decr
 
 - [Understand passkeys in 4 minutes by Chrome for Developers](https://www.youtube.com/watch?v=2xdV-xut7EQ)
 
-- [How Can Passkeys Possibly Be Safe? By Ask Leo!](https://www.youtube.com/watch?v=EA9mK3nJE1o)
+- [How Can Passkeys Possibly Be Safe? by Ask Leo!](https://www.youtube.com/watch?v=EA9mK3nJE1o)
 
-- [Passkeys Vs Passwords & MFA - Weighting the Pros and Cons! By Shannon Morse](https://www.youtube.com/watch?v=rKKkF19JF2w)
+- [Passkeys vs Passwords & MFA - Weighting the Pros and Cons! by Shannon Morse](https://www.youtube.com/watch?v=rKKkF19JF2w)
 
-- [What Are Passkeys? - Are Passwords Going EOL?! By Shannon Morse](https://www.youtube.com/watch?v=wuylMMB8CsU)
+- [What Are Passkeys? - Are Passwords Going EOL?! by Shannon Morse](https://www.youtube.com/watch?v=wuylMMB8CsU)
 
 - [Passwordless Passkey Logins 2023 - Are they Safe for Privacy? by Rob Braxman Tech](https://www.youtube.com/watch?v=dpTVXCjJQyY)
 

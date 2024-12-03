@@ -2,25 +2,15 @@
 
 /* Markdown content */
 
-/* Long-Text Lists - Content */
+/* Long-Text Lists */
 body .md-content ul li p, .md-content ol li p {
     font-family: "Quicksand", serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    font-size: 18px; 
-    line-height: 1.4;
-    margin-bottom: 15px;
-}
-
-/* Long-Text Lists - Spans */
-body .md-content li span {
-    font-family: "Indie Flower", serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 23.5px;
-    color: bisque;
+    font-size: 14.5px;  
+    line-height: 1.5;
+    margin-bottom: 17px;
 }
 
 /* Low-Text Lists */
@@ -29,16 +19,16 @@ body .md-content ul li, .md-content ol li {
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    font-size: 17.5px !important;  
-    line-height: 1.2;
+    font-size: 14.5px !important;  
+    line-height: 1.5;
 }
 
 /* Paragraphs */
 .md-content p {
     text-align: justify;
     text-justify: inter-word;
-    font-size: 16.5px;
-    line-height: 1.55;
+    font-size: 12.5px;
+    line-height: 1.6;
     font-family: "Parkinsans", serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -76,93 +66,50 @@ body .md-content ul li, .md-content ol li {
       "INFM" 0,
       "SPAC" 0;
     color: #3167fc;
-    font-size: 18.5px;
+    font-size: 14.5px;
 }
 
-/* Paragraph > Bold Text */
-.md-content p strong, b {
-    font-weight: 600;
-    color: #FF5733;      
+/* Bold Text */
+.md-content strong, b {
+    font-weight: bold;  /* Ensure bold text is applied */
+    color: #FF5733;      /* Example: change the color of bold text */
     font-family: "Indie Flower", serif;
+    font-weight: 400;
     font-style: normal;
-    font-size: 18.5px;
-}
-
-/* Paragraph > Italics */
-.md-content em {
-    font-weight: 500;
-    color:rgb(227, 250, 17);    
-    font-family: "Dosis", serif;
-    font-style: normal;
-    font-size: 18px;
-}
-
-/* Paragraph > Span */
-.md-content p span {
-    font-family: "Indie Flower", serif;
-    color: bisque;
-    font-size: 23.5px;
+    font-size: 15.5px;
 }
 
 /* Heading h1 */
 .md-content h1 {
-    font-family: "Quicksand", serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
     text-align: center;
-    font-size: 70px !important;
-    margin-bottom: 30px;
+    font-size: 45px !important;
 }
 
 /* Heading h1 */
 .md-content h2 {
-    font-family: "Quicksand", serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
     text-align: center;
     font-size: 30px !important;
-    margin-bottom: 25px;
-    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-top: 25px;
 }
 
 /* Heading h3 */
 .md-content h3 {
-    font-family: "Quicksand", serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
     font-size: 23px !important;
-    margin-top: 20px;
-    margin-bottom: 20px;
 }
 
 /* Heading h4 */
 .md-content h4 {
-    font-family: "Quicksand", serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 24px !important;
-    margin-bottom: 10px;
+    font-size: 17px !important;
 }
 
 /* Heading h5 */
 .md-content h5 {
-    font-family: "Quicksand", serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 19px !important;
-    text-transform: none;
+    text-align: center;
+    font-size: 15px !important;
 }
 
 /* Heading h6 */
 .md-content h6 {
-    font-family: "Quicksand", serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
     font-size: 15px !important;
 }
