@@ -42,10 +42,18 @@
 ```
 
 
+- Find a way to sync words to references for example "Password Manager" always points to the document about Password Managers.
 
-     
-         
-        
+- Find a way to sync words for example every reference of "private keys" to be turned into "private-keys"
+
+
+```
+
+Span ------
+HREF (a) references ----------
+bold letters -----------
+italics (i,em) --------------
+blockquote ------------
         
         
        
