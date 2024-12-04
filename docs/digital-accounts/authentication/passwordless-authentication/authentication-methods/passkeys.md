@@ -183,7 +183,7 @@ In this case, the phone would act as an intermediary device, not directly tied t
 
 Because hardware keys are separate physical devices, they do not directly tie a user to a specific phone or device, offering a higher level of privacy. When using a hardware key, even if a platform recognizes the key, it cannot uniquely associate it with a particular phone, which reduces the potential for tracking.
 
-<span>How to Separate Multiple Accounts under the same Platform</span>
+<span>Multiple Accounts under the same Platform</span>
 
 Under this scenario, you could create separate user accounts within the same platform and use a unique passkey for each account; by using different passkeys for different accounts, you can prevent them from being linked to each other. 
 

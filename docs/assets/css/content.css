@@ -10,7 +10,7 @@ body .md-content ul li p, .md-content ol li p {
     font-style: normal;
     font-size: 18px; 
     line-height: 1.45;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
 }
 
 /* Long-Text Lists - Spans */
@@ -55,7 +55,7 @@ body .md-content ul li, .md-content ol li {
       "BNCE" 0,
       "INFM" 0,
       "SPAC" 0;
-    color: #ffc0cb;
+    color: rgb(250, 229, 203);
     font-size: 17.5px;
     margin-right: -2px;
 }
@@ -64,8 +64,9 @@ body .md-content ul li, .md-content ol li {
 /* #e7a6bd - pink */
 /* Orange - #FF5733 */
 
+/* Paragraph > Links - Hover */
 .md-content p a:hover {
-    color: #e78dad;
+    color: #ffc0cb;
 }
 
 /* Paragraph > Bold Text */
@@ -139,6 +140,7 @@ body .md-content ul li, .md-content ol li {
     font-size: 24px !important;
     margin-bottom: 10px;
     color: bisque;
+    display: none;
 }
 
 /* Heading h5 */
@@ -152,6 +154,11 @@ body .md-content ul li, .md-content ol li {
     text-transform: none;
     text-decoration: none;
     color: bisque;
+    display: none;
+}
+
+.md-content h5 a:hover{
+    color: #ffc0cb;
 }
 
 /* Heading h5 > Links a */
@@ -185,4 +192,5 @@ body .md-content ul li, .md-content ol li {
     font-style: normal;
     font-size: 22px !important;
     color: bisque;
+    display: none;
 }

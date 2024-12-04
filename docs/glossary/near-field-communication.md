@@ -1,6 +1,6 @@
 # Near Field Communication (NFC)
 
-<br> #Definition
+<br> <span>#Definition</span><br>
 
 > NFC (Near Field Communication) is a short-range wireless communication technology that allows devices to exchange data when they are brought close to each other, typically within a distance of a few centimeters.
 
