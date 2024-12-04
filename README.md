@@ -49,12 +49,12 @@
 
 ```
 
-Span ------
-HREF (a) references ----------
+Span ------ color bisque - usage - titles that don't want to be in the outline
+HREF (a) references (internal) ---------- 
+HREF (a) references (external) ----------
 bold letters -----------
 italics (i,em) --------------
 blockquote ------------
-        
         
        
         

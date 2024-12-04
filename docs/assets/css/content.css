@@ -55,36 +55,42 @@ body .md-content ul li, .md-content ol li {
       "BNCE" 0,
       "INFM" 0,
       "SPAC" 0;
-    color: #96ff3f;
-    font-size: 18.5px;
+    color: #ffc0cb;
+    font-size: 17.5px;
     margin-right: -2px;
+}
+
+/* #faf880 - yellow */
+/* #e7a6bd - pink */
+/* Orange - #FF5733 */
+
+.md-content p a:hover {
+    color: #e78dad;
 }
 
 /* Paragraph > Bold Text */
 .md-content p strong, b {
     font-weight: 600;
-    color: #ffffff;      
+    color:#ffc0cb;      
     font-family: "Indie Flower", serif;
     font-style: normal;
-    font-size: 18.5px;
+    font-size: 20px;
 }
-
-/* Orange - #FF5733 */
 
 /* Paragraph > Italics */
 .md-content em {
     font-weight: 500;
-    color:rgb(252, 94, 94);    
+    color: #faf880;    
     font-family: "Indie Flower", serif;
     font-style: normal;
-    font-size: 20.5px;
+    font-size: 21px;
 }
 
 /* Paragraph > Span */
 .md-content p span {
     font-family: "Indie Flower", serif;
     color: bisque;
-    font-size: 26.5px;
+    font-size: 28.5px;
 }
 
 /* Heading h1 */
@@ -106,7 +112,7 @@ body .md-content ul li, .md-content ol li {
     font-weight: 400;
     text-align: center;
     font-style: normal;
-    font-size: 35px !important;
+    font-size: 38px !important;
     margin-bottom: 25px;
     margin-top: 35px;
     color: bisque;

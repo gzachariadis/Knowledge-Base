@@ -1,8 +1,8 @@
 # <i class="hgi-stroke hgi-lock-key"></i> Passkeys
 
-<br> #Definition
+<br> <span>#Definition</span><br>
 
-> A *passkey* is a type of *"digital key"* used to log into websites and apps, passkeys use your device, like your phone or computer, to securely authenticate your identity. 
+> A passkey is a type of *"digital key"* used to log into websites and apps, passkeys use your device, like your phone or computer, to securely authenticate your identity. 
 
 ## Introduction
 
