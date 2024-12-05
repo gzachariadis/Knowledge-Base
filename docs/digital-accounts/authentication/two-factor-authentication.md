@@ -1,6 +1,12 @@
-# Two-Factor Authentication (2FA)
+# Two-Factor Authentication
 
-**Two-factor authentication (2FA)** is a security process that requires <u>**two separate forms**</u> of verification before granting access to an account. 
+<br><span># Definition</span>
+
+> **Two-factor authentication (2FA)** is a security process that requires <u>*two separate forms*</u> of verification before granting access to an account. 
+
+<br>
+
+### Introduction
 
 Most users will have bounced upon this, through a Google Verification SMS (Short Message Service), giving you a 6-8 digit password, which verifies you are the owner of the account you're trying to login into. That’s all two-factor authentication (2FA) does; combines two separate factors, <u>**something you know**</u>, *your password*, with <u>**something you have**</u>, like *access to the phone number associated with the account*.
 
@@ -14,11 +20,11 @@ In most cases, I believe that's **NOT** purposely done in an *evil* way, it's ju
 
 Concluding, we will look at the different ways to perform **Two-Factor Authentication**, understand them, analyze them and compare them based on factors like privacy and security.
 
-#### Common Implementations
+### Common Implementations
 
-- <i class="hgi-stroke hgi-command"></i> Authentication Apps
-- <i class="iconoir-mail"></i> Email Verification
-- <i class="fa-solid fa-fingerprint"></i> Hardware Keys
-- <i class="mdi mdi-key-chain-variant"></i> Password Managers
-- <i class="iconoir-app-notification"></i> Push Notifications
-- <i class="iconoir-chat-lines"></i> SMS Authentication
+##### <i class="hgi-stroke hgi-command"></i> [Authentication Apps]()
+##### <i class="iconoir-mail"></i> [Email Verification]()
+##### <i class="fa-solid fa-fingerprint"></i> [Hardware Keys]()
+##### <i class="mdi mdi-key-chain-variant"></i> [Password Managers]()
+##### <i class="iconoir-app-notification"></i> [Push Notifications]()
+##### <i class="iconoir-chat-lines"></i> SMS Authentication

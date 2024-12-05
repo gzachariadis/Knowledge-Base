@@ -1,6 +1,12 @@
 
+## Index
 
-## Table of Contents
+<br>
 
-- [Passwordless Authentication](passwordless-authentication/index.md)
-- [Two-Factor (2FA) Authentication](two-factor-authentication/home.md)
+<span>Categories</span>
+
+<br>
+
+##### - [Passwordless Authentication](passwordless-authentication/index.md)
+
+##### - [Two-Factor (2FA) Authentication](two-factor-authentication.md)

@@ -2,6 +2,7 @@ site_name: Knowledge Base
 site_url: https://sitename.example
 theme:
   name: material
+  custom_dir: docs/overrides
   features:
     - navigation.instant # https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#instant-loading
     - navigation.instant.progress # https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/?h=breadcrumbs#progress-indicator
@@ -18,9 +19,16 @@ theme:
   palette:
     scheme: slate
   plugins:
-    - typeset
-    - search
-
+    - search:
+      enabled: true
+      lang: en
+      pipeline:
+        - stopWordFilter
+    - privacy:
+      concurrency: 2
+      assets: true
+      assets_fetch: true
+      assets_fetch_dir: assets/media/
 nav:
   - <i class="hgi-stroke hgi-book-open-01"></i> Start Here:
     - start-here/index.md
@@ -29,12 +37,13 @@ nav:
     - <i class="hgi-stroke hgi-authorized"></i> Authentication: digital-accounts/authentication/index.md
     - <i class="hgi-stroke hgi-delete-04"></i> Deletion: digital-accounts/deletion/index.md
   - <i class="hgi-stroke hgi-cloud"></i> Getting Online:
-    - <i class="hgi-stroke hgi-corporate"></i> Service Providers: getting-online/service-providers/choosing-a-provider.md
-    - <i class="hgi-stroke hgi-internet-antenna-03"></i> Long Range Antennas: getting-online/long-range-antennas/index.md
-    - <i class="hgi-stroke hgi-router-02"></i> Gateways: getting-online/gateways/index.md
+    - <i class="hgi-stroke hgi-corporate"></i> Service Providers: docs/getting-online/service-providers/index.md
+    - <i class="hgi-stroke hgi-internet-antenna-03"></i> Long Range Antennas: getting-online/hardware/long-range-antennas/index.md
+    - <i class="hgi-stroke hgi-router-02"></i> Gateways: getting-online/hardware/gateways/index.md
     - <i class="hgi-stroke hgi-wifi-lock"></i> Access Points: getting-online/access-points/index.md
-    - <i class="hgi-stroke hgi-fire-security"></i> Hardware Firewalls: getting-online/hardware-firewalls/index.md
-    - <i class="hgi-stroke hgi-computer-cloud"></i> Virtual Private Networks: getting-online/virtual-private-networks/index.md
+    - <i class="hgi-stroke hgi-fire-security"></i> Hardware Firewalls: getting-online/hardware/firewall/index.md
+    - Software:
+      - <i class="hgi-stroke hgi-computer-cloud"></i> Virtual Private Networks: getting-online/software/virtual-private-networks/index.md
   - <i class="hgi-stroke hgi-wrench-01"></i> Private Devices:
     - <i class="hgi-stroke hgi-smartphone-wifi"></i> Smartphone: devices/smart-phone/index.md
   - Backup Methods:
