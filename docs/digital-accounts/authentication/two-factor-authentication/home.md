@@ -14,7 +14,7 @@ In most cases, I believe that's **NOT** purposely done in an *evil* way, it's ju
 
 Concluding, we will look at the different ways to perform **Two-Factor Authentication**, understand them, analyze them and compare them based on factors like privacy and security.
 
-#### Most common ways of Two Factor Authentication (2FA)
+#### Common Implementations
 
 - <i class="hgi-stroke hgi-command"></i> Authentication Apps
 - <i class="iconoir-mail"></i> Email Verification

@@ -2,7 +2,7 @@
 .md-nav__link, .md-header-nav__link {
     white-space: nowrap !important; /* Prevent wrapping */
     overflow:visible;     /* Ensure the text is not clipped */
-    font-size: 16px !important;  /* Adjust font size for sidebar navigation */
+    font-size: 17.5px !important;  /* Adjust font size for sidebar navigation */
     line-height: 1.45 !important; /* Set line height to provide enough space between lines */
 }
 
@@ -75,7 +75,6 @@
     text-decoration:none;
 }
 
-
 /* Target the top-level navigation list */
 ul.md-nav__list[data-md-component="toc"] {
     margin-top: 20px;
@@ -119,7 +118,7 @@ ul.md-nav__list[data-md-component="toc"] .md-nav__item .md-nav__link:active {
 /* Navigation Title */
 .md-nav__title {
     font-size: 20px;
-    margin-top: 100px;
+    margin-top: 130px;
     margin-bottom: 5px;
     line-height: 1.5;
     font-family: "Indie Flower", serif;
@@ -127,7 +126,8 @@ ul.md-nav__list[data-md-component="toc"] .md-nav__item .md-nav__link:active {
 
 /* Target the <span> inside the label */
 label.md-nav__link .md-ellipsis {
-    font-size: 18px !important;
+    font-size: 19px !important;
+    font-family: "Indie Flower", sans-serif;
     margin-top: 5px;
     margin-bottom: 10px;
     vertical-align: middle;
