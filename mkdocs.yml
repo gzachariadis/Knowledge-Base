@@ -1,11 +1,17 @@
-site_name: Explained Simply
+site_name: Knowledge Base
 site_url: https://sitename.example
 theme:
   name: material
-  toc:
-    depth: 4
+  features:
+    - navigation.instant # https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#instant-loading
+    - navigation.instant.progress # https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/?h=breadcrumbs#progress-indicator
+    - navigation.instant.preview # https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/?h=breadcrumbs#automatic-previews
+    - navigation.sections # https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#navigation-sections
+    - navigation.tracking # https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/?h=breadcrumbs#anchor-tracking
+    - navigation.prune # https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/?h=breadcrumbs#navigation-pruning
+    - navigation.top # https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/?h=breadcrumbs#back-to-top-button
   font: 
-    text: Comfortaa
+    text: Quicksand
     code: Red Hat Mono
   icon:
     logo: fontawesome/solid/w
@@ -13,32 +19,31 @@ theme:
     scheme: slate
   plugins:
     - typeset
+    - search
 
 nav:
-  - <i class="hgi-stroke hgi-book-open-01"></i> Start Here: start-here/index.md
-  - <i class="hgi-stroke hgi-cloud"></i> Getting Online:
-      - <i class="hgi-stroke hgi-corporate"></i> Service Providers: getting-online/service-providers/choosing-a-provider.md
-      - <i class="hgi-stroke hgi-internet-antenna-03"></i> Long Range Antennas: getting-online/long-range-antennas/index.md
-      - <i class="hgi-stroke hgi-router-02"></i> Gateways: getting-online/gateways/index.md
-      - <i class="hgi-stroke hgi-wifi-lock"></i> Access Points: getting-online/access-points/index.md
-      - <i class="hgi-stroke hgi-fire-security"></i> Hardware Firewalls: getting-online/hardware-firewalls/index.md
-      - <i class="hgi-stroke hgi-computer-cloud"></i> Virtual Private Networks (VPNs): getting-online/virtual-private-networks/index.md
-  - <i class="hgi-stroke hgi-wrench-01"></i> Private Devices:
-    - <i class="hgi-stroke hgi-smartphone-wifi"></i> Smartphone:
-      - <i class="hgi-stroke hgi-shopping-bag-03"></i> Phone Models: devices/smart-phone/phone-models/choosing-a-device.md
-      - <i class="hgi-stroke hgi-simcard-01"></i> Subscriber ID Module (SIM): devices/smart-phone/choosing-a-sim/index.md
-      - <i class="hgi-stroke hgi-layers-02"></i> Operating System: devices/smart-phone/operating-systems/choosing-an-operating-system.md
-      - <i class="hgi-stroke hgi-grid-view"></i> Applications Catalog: devices/smart-phone/applications-catalog/index.md
-      - <i class="hgi-stroke hgi-cpu-settings"></i> System Settings: devices/smart-phone/system-settings/index.md
+  - <i class="hgi-stroke hgi-book-open-01"></i> Start Here:
+    - start-here/index.md
   - <i class="hgi-stroke hgi-user"></i> Digital Accounts:
     - <i class="hgi-stroke hgi-signature"></i> Creation: digital-accounts/creation/index.md
     - <i class="hgi-stroke hgi-authorized"></i> Authentication: digital-accounts/authentication/index.md
     - <i class="hgi-stroke hgi-delete-04"></i> Deletion: digital-accounts/deletion/index.md
-  - OPSec:
-    - Managing Credentials:
-      - <i class="hgi-stroke hgi-hard-drive"></i> Hardware Encrypted Drives: managing-credentials/options/hardware-encrypted-usb-drives/index.md
-      - <i class="hgi-stroke hgi-lock-key"></i> Hardware Security Keys: managing-credentials/options/hardware-keys/index.md
-      - <i class="hgi-stroke hgi-circle-password"></i> Password Managers: managing-credentials/options/password-managers/home.md
+  - <i class="hgi-stroke hgi-cloud"></i> Getting Online:
+    - <i class="hgi-stroke hgi-corporate"></i> Service Providers: getting-online/service-providers/choosing-a-provider.md
+    - <i class="hgi-stroke hgi-internet-antenna-03"></i> Long Range Antennas: getting-online/long-range-antennas/index.md
+    - <i class="hgi-stroke hgi-router-02"></i> Gateways: getting-online/gateways/index.md
+    - <i class="hgi-stroke hgi-wifi-lock"></i> Access Points: getting-online/access-points/index.md
+    - <i class="hgi-stroke hgi-fire-security"></i> Hardware Firewalls: getting-online/hardware-firewalls/index.md
+    - <i class="hgi-stroke hgi-computer-cloud"></i> Virtual Private Networks: getting-online/virtual-private-networks/index.md
+  - <i class="hgi-stroke hgi-wrench-01"></i> Private Devices:
+    - <i class="hgi-stroke hgi-smartphone-wifi"></i> Smartphone: devices/smart-phone/index.md
+  - Backup Methods:
+    - <i class="hgi-stroke hgi-hard-drive"></i> Hardware Encrypted Drives: managing-credentials/options/hardware-encrypted-usb-drives/index.md
+  - Credential Management:
+    - <i class="hgi-stroke hgi-lock-key"></i> Hardware Security Keys: managing-credentials/options/hardware-keys/index.md
+    - <i class="hgi-stroke hgi-circle-password"></i> Password Managers:  managing-credentials/options/password-managers/home.md
+
+
 extra_css:
   - assets/css/navigation.css
   - assets/css/content.css
@@ -58,4 +63,3 @@ markdown_extensions:
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - md_in_html
   - pymdownx.blocks.caption
-  

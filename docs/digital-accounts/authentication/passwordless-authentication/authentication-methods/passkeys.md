@@ -97,7 +97,7 @@ As you can see, currently, both sides of the current infrastructure cause proble
 
 Well, take a closer look...
 
-#### Advantages — against Passwords
+##### Advantages
 
 - <span>Zero Reusability</span> — Passkeys are not reusable, they can't be stolen and re-used just like passwords can.
   
@@ -117,7 +117,7 @@ Well, take a closer look...
 
 - <span>Phishing Protection</span> — Passkeys stop phishing attacks. Since you don’t manually type anything to log in, a hacker can’t trick you into entering your password on a fake website. The authentication process relies on your device, so it only works on the legitimate website or app.
 
-#### Disadvantages — against Passwords
+##### Disadvantages
 
 - <span>Hackable</span> — Same as passwords, passkeys are only as safe as the place you store them.
 
@@ -125,21 +125,19 @@ Well, take a closer look...
 
 - <span>Non-Compartmentalized (by Default)</span> — Can be stored in the same device as your passwords & 2FA codes.
 
-## Technical Specifics  
+#### Technical Specifics  
 
 > Caution! You can skip this part in case you are not interested in details about how these protocols work.
 
-### WebAuthN
+##### WebAuthN
 
-The way passkeys are implemented, all you need is a security module installed on the device called **WebAuthN**, then when a passkey is initiated or triggered, the website, can communicate through Javascript with your phone and pop-up a phone login action, provided it’s successful, the device and website exchange information on a challenge, the phone completes, website verifies it’s successful and you are logged in.
+WebAuthN (Web Authentication), a **web standard** that allows websites to authenticate users securely without relying on passwords; it is what passkeys rely on to verify your account ownership over cryptographic keys. This security module, comes pre-installed on your device as part of the Operating System. 
 
-The Authenticator component of the Operating System and the Client (usually a Browser performing authentication) require presence and proximity, there are different ways that prove this connection, but basically the private-key, can’t be not stored on-device or transmitted to a device via network; bluetooth, [NFC](../../../../glossary/near-field-communication.md) or usb, only go so far.
+When you try to log in to a website, the website communicates with your device through JavaScript via the client, prompting a login action. When successful, the website and your device exchange a challenge that the device is meant to solve. Upon completion, the website verified the challenge solution and a successful login occurs.
 
-Because it combines multiple protocols and security features, like having to unlock your keychain / authentication module on your operating system, whether by a biometric or pin, having an intent gesture, like touching a hardware key or actively initiating a login procedure. The authentication process  is much more secure.
+For this process to work, both the operating system's authenticator and the device performing the login need to be in close proximity. This is why the authentication relies on various methods to prove proximity, such as Bluetooth, [NFC](../../../../glossary/near-field-communication.md) or USB.
 
-The aim is to be as hardware-based as possible.
-
-## Privacy Concerns
+#### Privacy Concerns
 
 ##### Biometrics
 
@@ -189,29 +187,35 @@ Under this scenario, you could create separate user accounts within the same pla
 
 Preferably, you would use hardware security keys for this purpose, the advantage of using hardware keys is that they provide an added layer of security, allowing you to keep each identity separate, by avoiding cross device tracking. Although, be careful, this process can prove extremely expensive, because it requires having separate physical hardware devices (aka hardware keys) for each one of your accounts to a platform. Ultimately, it's only proposed for platforms that you truly require a separate *"identity"*, not associated with your natural one.
 
-##### Cross-Domain Tracking & Phishing Attacks
+##### Cross-Domain Tracking
 
-The passkey has an integrated private-key, a derivative private/public key associated based on the domain identity (Relying Party); it’s **unique** so it **does not leak cross-domain identity and tracking.**
+A passkey depends an integrated private-key, a derivative private/public key associated with each domain identity (Relying Party); it’s **unique**, so by design **does not leak cross-domain identity and tracking**. As should your passwords be, **unique to each website**. 
 
-As should your passwords be, **unique to each website**. The system doesn’t fundamentally change, except from the fact, your private-keys are stored securely on your device. The passkeys, still correspond to individual services and are used to authorize your login, just like your passwords used to do. Fundamentally, you exchange your secure random passwords database for a database with secure private-keys. 
+The system doesn’t fundamentally change, the passkeys, just like individual passwords, still correspond to individual services and are used to validate account ownership. Fundamentally, you exchange your secure random passwords database for a database with secure private-keys. 
 
-Similarly, while password managers can help fill-in login details automatically, they **don't fully protect against phishing attacks**. Phishing protection can still be bypassed by very convincing fake sites, because it's a form of link-based protection; you or your password manager's auto-fill feature, can be tricked into navigating onto a fake website, and filling in your details, effectively sharing them with a malicious actor.
 
 Passkeys are much more resistant to phishing attacks because they **don’t rely on typing or submitting anything at all**. Instead, the authentication process uses your device to assign a verification challenge to your private-key, which can't be prompted by a malicious site.
 
+##### Phishing Attacks
+
+While password managers can help fill-in login details automatically, they **don't fully protect against phishing attacks**. Phishing protection can still be bypassed by very convincing fake sites. You or your password manager's auto-fill feature, can be tricked into navigating onto a fake website, and filling in your details, effectively sharing them with a malicious actor.
+
+
 ##### Credential Storage
 
-A backup of your private-key could potentially be stored by the platform of your phone provider, if you choose to initiate it through a phone, aka Google Cloud or iCloud.
+A backup of your private-key could potentially be stored by the platform of your phone provider (**Google Cloud** or **iCloud**) but only when you choose to initiate it through a phone.
 
-Should you be worried about Google storing your private-key? Probably not, if it’s end-to-end encrypted, think of it like Google requiring your master password on a password manager, to view your passwords, which they don’t have.
+Should you be worried about Google storing your private-key? Probably not; provided, it’s end-to-end encrypted.
 
-You should be aware that, when opting to initiate passkey creation, through platform providers (Google, Apple, Microsoft), they will be able to see what platform the private-key is being associated with. 
+In case you are not familiar with end-to-end encryption, it's a bit like Google requiring your master password on a password manager, to view your passwords, which they don’t have.
+
+When opting to initiate passkey creation, through platform providers (Google, Apple, Microsoft), **they will be able to see what platform the private-key is being associated with**. 
 
 That means, theoretically at least, **platform providers are able to associate you with platforms and your accounts under those platforms**. Not sure, I would want any of those to know which platforms I have accounts with.
 
 ## Frequently Asked Questions
 
-###### - Passkey-Only Access Account
+<span>- Passkey-Only Access Account</span>
 
 Can an account truly be passkey-only access? In theory, **yes**, an online account can be **passkey-only** access — but **in practice? Unluckily.** There’s always the need for backup methods, either for account recovery or for setting up new devices. These fallback options are in place to ensure you don’t get locked out.
 
@@ -219,7 +223,7 @@ Another note to consider, is this, almost all major services still require an em
 
 That's not the only reason though, people are a factor too; we lose keys, don't backup data, switch phones, forget passwords; that means passkey access-only account will almost-never be an option, by major platforms at least, because there will always be a need for account recovery.
 
-###### - Storing Passkeys under a *Password Manager*
+<span>- Storing Passkeys under a Password Manager</span>
 
 Lorem Ipsum
 
@@ -231,7 +235,7 @@ Lorem Ipsum
 
 - You can store passkeys both to your Bitwarden Vault and to your Hardware Key
 
-###### - Stolen or compromised Passkey
+<span>- Stolen or compromised Passkey</span>
 
 Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
 

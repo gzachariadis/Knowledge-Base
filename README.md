@@ -56,10 +56,16 @@ bold letters -----------
 italics (i,em) --------------
 blockquote ------------
         
-       
-        
-        
-    
-    
+```
+
+```
+- <i class="hgi-stroke hgi-shopping-bag-03"></i> Phone Models: devices/smart-phone/phone-models/choosing-a-device.md
+      - <i class="hgi-stroke hgi-simcard-01"></i> Subscriber ID Module (SIM): devices/smart-phone/choosing-a-sim/index.md
+      - <i class="hgi-stroke hgi-layers-02"></i> Operating System: devices/smart-phone/operating-systems/choosing-an-operating-system.md
+      - <i class="hgi-stroke hgi-grid-view"></i> Applications Catalog: devices/smart-phone/applications-catalog/index.md
+      - <i class="hgi-stroke hgi-cpu-settings"></i> System Settings: devices/smart-phone/system-settings/index.md
+
+
+
 
 ```
