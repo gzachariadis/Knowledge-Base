@@ -1,1 +1,0 @@
-# <i class="hgi-stroke hgi-database-import"></i> [Personal Data](personal-data.md)

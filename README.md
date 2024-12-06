@@ -69,3 +69,9 @@ blockquote ------------
 
 
 ```
+
+### TO-DO
+
+- [ ] Add a Footer
+- [ ] Fix Heading Structure so heading 5 is heading 4
+- [ ] Set Style of links in content

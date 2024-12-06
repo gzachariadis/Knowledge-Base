@@ -1,3 +1,7 @@
+---
+alias: wuthering-heights
+---
+
 # <i class="hgi-stroke hgi-lock-key"></i> Passkeys
 
 <br><span>#Definition</span>

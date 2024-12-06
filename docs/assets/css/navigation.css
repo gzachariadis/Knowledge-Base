@@ -118,7 +118,7 @@ ul.md-nav__list[data-md-component="toc"] .md-nav__item .md-nav__link:active {
 /* Navigation Title */
 .md-nav__title {
     font-size: 20px;
-    margin-top: 130px;
+    margin-top: 30px;
     margin-bottom: 5px;
     line-height: 1.5;
     font-family: "Indie Flower", serif;

@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+/* Footer container */
+.footer {
+  display: flex;
+  justify-content: space-between; /* Distribute space between logo and social menu */
+  align-items: center; /* Vertically align items */
+  padding: 20px 25px;
+  color: #ffffff;
+  background-color: #1E2129;
+  border-top: 1px solid #1E2129;
+  flex-wrap: wrap; /* Allow items to wrap if necessary */
+}
+
+.footer__logo {
+  font-family: 'Pacifico', cursive;
+  font-weight: 400;
+  text-transform: lowercase;
+  font-size: 2rem;
+  color: bisque;
+  transition: font-size 0.3s ease;
+  margin-right: auto; /* Push the logo to the left */
+  padding-left: 0.7rem !important;
+}
+
+.social-menu {
+  display: flex;
+  justify-content: flex-end; /* Align social menu to the right */
+  align-items: center; /* Vertically align the icons */
+}
+
+.social-menu ul {
+  display: flex;
+  margin-top: 10px;
+}
+
+.social-menu ul li {
+  list-style: none;
+  margin: 0 10px; /* Add space between social icons */
+}
+
+.social-menu ul li .fab {
+  font-size: 24px; /* Default icon size */
+  transition: .3s;
+  color: #000;
+  line-height: normal; /* Ensure line-height is normal */
+}
+
+.social-menu ul li a {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center icons horizontally and vertically */
+  width: 40px; /* Default width of the circle */
+  height: 40px; /* Default height of the circle */
+  border-radius: 50%;
+  background-color: #fff; /* Default background color */
+  text-align: center;
+  transition: 0.6s ease; /* Smooth transition */
+  box-shadow: 0 5px 4px rgba(0, 0, 0, .5);
+}
+
+.social-menu ul li a:hover {
+  transform: translate(0, -10%); /* Slight hover effect */
+  background-color: #333; /* Change background color of the circle */
+}
+
+.social-menu ul li a:hover .fab {
+  color: #fff; /* Change icon color to white when hovering */
+}
+
+/* Hover effects per specific social icon */
+.social-menu ul li:nth-child(1) a:hover {
+  background-color: rgb(0, 0, 0); /* Turn the GitHub icon's circle to black */
+}
+
+.social-menu ul li:nth-child(2) a:hover {
+  background-color: #E4405F; /* Turn the Mastodon icon's circle to pink */
+}
+
+.social-menu ul li:nth-child(3) a:hover {
+  background-color: #0077b5; /* Turn the LinkedIn icon's circle to blue */
+}
+
+.social-menu ul li:nth-child(4) a:hover {
+  background-color: #ffa742; /* Turn the CodePen icon's circle to orange */
+}
+
+/* Legal Section Styling */
+.footer__legal {
+  display: flex;
+  justify-content: space-between; /* Space out the two p tags */
+  width: 100%; /* Ensure it spans the full width */
+  padding-top: 20px;
+  align-items: center; /* Vertically align the text to the center */
+}
+
+.footer__legal p {
+  margin: 0;
+  padding-left: 0.45rem !important;
+  font-size: 0.55rem; /* Smaller font size for legal text */
+  color: #ffffff;
+}
+
+/* Heart Icon */
+.heart {
+  color: #ff5757;
+  font-size: 0.95rem;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+  .footer__logo {
+    font-size: 2rem; /* Slightly smaller logo on tablets */
+  }
+
+  .social-menu ul li .fab {
+    font-size: 25px; /* Smaller social icons on tablets */
+  }
+
+  .social-menu ul li a {
+    width: 50px; /* Smaller circle for social icons */
+    height: 50px;
+  }
+
+  .footer__legal p {
+    font-size: 0.65rem; /* Smaller font size for legal text on tablets */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer__logo {
+    font-size: 1.5rem; /* Even smaller logo on mobile */
+  }
+
+  .social-menu ul li .fab {
+    font-size: 20px; /* Smaller social icons on mobile */
+  }
+
+  .social-menu ul li a {
+    width: 45px; /* Even smaller circle */
+    height: 45px;
+  }
+
+  .footer__legal p {
+    font-size: 0.55rem; /* Smaller font size for legal text on smaller screens */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .footer__logo {
+    font-size: 1.2rem; /* Smallest logo size on very small screens */
+  }
+
+  .social-menu ul li .fab {
+    font-size: 18px; /* Smallest social icons */
+  }
+
+  .social-menu ul li a {
+    width: 40px; /* Smallest circle */
+    height: 40px;
+  }
+ 
+  .footer__legal p {
+    font-size: 0.5rem; /* Smallest font size for legal text */
+    text-align: center; /* Center-align legal text on very small screens */
+  }
+}
