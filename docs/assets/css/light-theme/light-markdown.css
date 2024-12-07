@@ -1,0 +1,89 @@
+/* Override background color when the "default" color scheme is active (light mode) */
+[data-md-color-scheme="default"] {
+    background-color: #fdf1dd; /* Set to your desired background color */
+}
+
+/* Change text color */
+[data-md-color-scheme="default"] {
+    color: #03101f; /* Darker text for light mode */
+}
+/* Long-Text Lists - Content */
+[data-md-color-scheme="default"] body .md-content ul li p, .md-content ol li p {
+    color: #03101f;
+}
+
+/* Long-Text Lists - Spans */
+[data-md-color-scheme="default"] body .md-content li span {
+    color: #03101f;
+}
+
+/* Low-Text Lists */
+[data-md-color-scheme="default"] body .md-content ul li, .md-content ol li {
+    color: #03101f;
+}
+
+/* Paragraphs */
+[data-md-color-scheme="default"] .md-content p {
+    color: #2C3E50;
+}
+
+/* Paragraph > Links */
+[data-md-color-scheme="default"] .md-content p a {
+    color: #1175f8;
+}
+
+/* #faf880 - yellow */
+/* #e7a6bd - pink */
+/* Orange - #FF5733 */
+/* purple - #6d16fa */
+
+/* Paragraph > Links - Hover */
+[data-md-color-scheme="default"] .md-content p a:hover {
+    color: #fa768c;
+}
+
+/* Paragraph > Bold Text */
+[data-md-color-scheme="default"] .md-content p strong, b {
+    color:#ad5207;      
+}
+
+/* Paragraph > Italics */
+[data-md-color-scheme="default"] .md-content em {
+    color: #ff2222;    
+}
+
+/* Paragraph > Span */
+[data-md-color-scheme="default"] .md-content p span {
+    color: #03101f;
+    font-weight: 500;
+}
+
+/* Override the heading color for the default theme (light mode) */
+[data-md-color-scheme="default"] .md-content h1,
+[data-md-color-scheme="default"] .md-content h2,
+[data-md-color-scheme="default"] .md-content h3,
+[data-md-color-scheme="default"] .md-content h4,
+[data-md-color-scheme="default"] .md-content h5,
+[data-md-color-scheme="default"] .md-content h6 {
+    color: #03101f;  /* Replace with your desired color */
+    font-weight: 500;
+}
+
+/* Heading h5 > Links a */
+[data-md-color-scheme="default"] .md-content h5 a {
+    color: #03101f;
+}
+
+[data-md-color-scheme="default"] .md-typeset h5, .md-typeset h6 {
+    color: #03101f;
+} 
+
+/* Heading h5 > Links > Hover */
+[data-md-color-scheme="default"] .md-content h5 a:hover{
+    color: #fa768c;
+}
+
+[data-md-color-scheme="default"] .md-content h5 i {
+    color: #03101f;
+}
+

@@ -1,6 +1,4 @@
-## Index
-
-<br>
+<div class="spacer"></div>
 
 <span>Categories</span>
 

@@ -1,0 +1,80 @@
+/* Target the first .md-nav__item in the sidebar */
+[data-md-color-scheme="default"] .md-nav--primary .md-nav__list .md-nav__item a {
+    color: #07090c;
+}
+
+/* Remove background color for all items inside .md-container */
+[data-md-color-scheme="default"] .md-sidebar__scrollwrap * {
+    background-color: transparent !important;  /* Remove any background color */
+    box-shadow: none !important;  /* Remove any box shadows */
+    border: none !important;  /* Remove any borders */
+}
+
+[data-md-color-scheme="default"] .md-nav--secondary .md-nav__list .md-nav__item {
+    color: #010102;
+}
+
+[data-md-color-scheme="default"] .md-nav--primary .md-nav__list .md-nav__item .md-nav__link:hover{
+    color: #c7112f; 
+    text-decoration:none;
+}
+
+[data-md-color-scheme="default"] .md-nav--primary .md-nav__list .md-nav__item .md-nav__link:active {
+    color: #c7112f;
+    text-decoration:none;
+}
+
+[data-md-color-scheme="default"] .md-nav--primary .md-nav__list .md-nav__item .md-nav__link:focus{
+    color: #f85973;
+    text-decoration:none;
+}
+
+[data-md-color-scheme="default"] .md-nav--primary .md-nav__list .md-nav__item .md-nav__link:active{
+    color: #f85973;
+    text-decoration:none;
+}
+
+[data-md-color-scheme="default"] .md-nav--primary .md-nav__list .md-nav__item .md-nav__item--active a {
+    color: #f85973;
+    text-decoration:none;
+}
+
+[data-md-color-scheme="default"] .md-nav--secondary .md-nav__list .md-nav__item .md-nav__link:hover{
+    color: #f85973; 
+    text-decoration:none;
+}
+
+[data-md-color-scheme="default"] .md-nav--secondary .md-nav__list .md-nav__item .md-nav__link:active {
+    color: #f85973;
+    text-decoration:none;
+}
+
+[data-md-color-scheme="default"] .md-nav--secondary .md-nav__list .md-nav__item .md-nav__link:focus{
+    color: #f85973;
+    text-decoration:none;
+}
+
+[data-md-color-scheme="default"] .md-nav--secondary .md-nav__list .md-nav__item .md-nav__link:active{
+    color: #f85973;
+    text-decoration:none;
+}
+
+[data-md-color-scheme="default"] .md-nav--secondary .md-nav__list .md-nav__item .md-nav__item--active a {
+    color: #f85973;
+    text-decoration:none;
+}
+
+/* Hover effect for links */
+[data-md-color-scheme="default"] ul.md-nav__list[data-md-component="toc"] .md-nav__item .md-nav__link:hover {
+    color: #f85973;
+    text-decoration: none;
+}
+
+/* Target active navigation item */
+[data-md-color-scheme="default"] ul.md-nav__list[data-md-component="toc"] .md-nav__item .md-nav__link:active {
+    color: #f85973; /* Change the text color of the active item */
+}
+
+[data-md-color-scheme="default"] .md-nav__item .md-nav__link--active, .md-nav__item .md-nav__link--active code {
+    color: #f85973;
+}

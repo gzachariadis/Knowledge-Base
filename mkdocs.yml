@@ -14,36 +14,40 @@ theme:
   font: 
     text: Quicksand
   palette:
-    scheme: slate
+    # Light mode
+    - scheme: default
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+    # Dark Mode
+    - scheme: slate
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
   plugins:
     - search
     - material-extensions
 nav:
   - <i class="hgi-stroke hgi-book-open-01"></i> Start Here:
-    - start-here/index.md
-    - Glossary: glossary/index.md
+    - <i class="hgi-stroke hgi-favourite"></i> Welcome: start-here/index.md
+    - <i class="hgi-stroke hgi-book-open-02"></i> Glossary: glossary/index.md
+    - <i class="hgi-stroke hgi-edit-01"></i> Design Guide: start-here/style-guide.md
+  - <i class="hgi-stroke hgi-connect"></i> Home Networking:
+    - <i class="hgi-stroke hgi-home-wifi"></i> Service Providers: home-networking/service-providers/index.md
+    - <i class="hgi-stroke hgi-computer-phone-sync"></i> Networking Equipment: home-networking/networking/index.md
+  - <i class="hgi-stroke hgi-tv-01"></i> Physical Devices:
+    - <i class="hgi-stroke hgi-smartphone-wifi"></i> Smartphone: physical-devices/android-phone/index.md
+    - <i class="hgi-stroke hgi-stroke hgi-computer"></i> Desktop Computer: physical-devices/desktop-computer/index.md
+  - <i class="hgi-stroke hgi-wireless-cloud-access"></i> Software:
+    - <i class="hgi-stroke hgi-geometric-shapes-01"></i> Tools: getting-online/software/index.md
   - <i class="hgi-stroke hgi-user"></i> Digital Accounts:
-    - <i class="hgi-stroke hgi-signature"></i> Creation: digital-accounts/creation/index.md
     - <i class="hgi-stroke hgi-authorized"></i> Authentication: digital-accounts/authentication/index.md
-  - <i class="hgi-stroke hgi-cloud"></i> Getting Online:
-    - <i class="hgi-stroke hgi-corporate"></i> Service Providers: getting-online/service-providers/index.md
-    - <i class="hgi-stroke hgi-internet-antenna-03"></i> Long Range Antennas: getting-online/hardware/long-range-antennas/index.md
-    - <i class="hgi-stroke hgi-router-02"></i> Gateways: getting-online/hardware/gateways/index.md
-    - <i class="hgi-stroke hgi-wifi-lock"></i> Access Points: getting-online/hardware/access-points/index.md
-    - <i class="hgi-stroke hgi-fire-security"></i> Hardware Firewalls: getting-online/hardware/firewall/index.md
-    - Software:
-      - <i class="hgi-stroke hgi-computer-cloud"></i> Virtual Private Networks: getting-online/software/virtual-private-networks/index.md
-  - <i class="hgi-stroke hgi-wrench-01"></i> Private Devices:
-    - <i class="hgi-stroke hgi-smartphone-wifi"></i> Smartphone: devices/smart-phone/index.md
-  - Backup Methods:
-    - <i class="hgi-stroke hgi-hard-drive"></i> Hardware Encrypted Drives: managing-credentials/options/hardware-encrypted-usb-drives/index.md
-  - Credential Management:
-    - <i class="hgi-stroke hgi-lock-key"></i> Hardware Security Keys: managing-credentials/options/hardware-keys/index.md
-    - <i class="hgi-stroke hgi-circle-password"></i> Password Managers:  managing-credentials/options/password-managers/home.md
 extra_css:
-  - assets/css/navigation.css
-  - assets/css/content.css
-  - assets/css/footer.css
+  - assets/css/dark-theme/dark-markdown.css
+  - assets/css/dark-theme/navigation.css
+  - assets/css/dark-theme/footer.css
+  - assets/css/light-theme/light-markdown.css
+  - assets/css/light-theme/navigation.css
   - https://cdn.jsdelivr.net/gh/iconoir-icons/iconoir@main/css/iconoir.css
   - https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css
   - https://cdn.materialdesignicons.com/6.4.95/css/materialdesignicons.min.css
@@ -51,6 +55,7 @@ extra_css:
   - https://cdn.jsdelivr.net/npm/@primer/octicons@latest/dist/octicons.css
   - https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css
   - https://cdn.hugeicons.com/font/hgi-stroke-rounded.css
+  - https://use.fontshare.com/css/aesthetic.cs
 extra_javascript:
   - assets/js/open-in-new-tab.js
 markdown_extensions:

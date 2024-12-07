@@ -53,9 +53,12 @@ Span ------ color bisque - usage - titles that don't want to be in the outline
 HREF (a) references (internal) ---------- 
 HREF (a) references (external) ----------
 bold letters -----------
-italics (i,em) --------------
+italics (i,em) -------------- (dark theme) yellow text - 
 blockquote ------------
-        
+
+
+
+
 ```
 
 ```
@@ -75,3 +78,5 @@ blockquote ------------
 - [ ] Add a Footer
 - [ ] Fix Heading Structure so heading 5 is heading 4
 - [ ] Set Style of links in content
+- [ ] Align Navigation icons to their text, so they are perfectly aligned
+- [ ] Make the primary navigation bar, non draggable, so it's more static
