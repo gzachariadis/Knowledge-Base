@@ -1,4 +1,4 @@
-# Markdown Text
+# Markdown Cheatsheet
 
 ### Bold &nbsp;✅ - concepts
 
@@ -28,7 +28,6 @@
 
     <s> struck through text </s>
 
-
 ### Code Text (Inline) &nbsp;✅ - snippets of code 
 
     `text`
@@ -57,14 +56,6 @@
 
     <small> text smaller </small>
 
-### Horizontal Rule
-
-    ---
-
-### Code Block (Multiple Lines)
-
-    ```code block```
-
 ### Underlines &nbsp;✅ - prime significance
 
     <u> underline text </u>
@@ -72,3 +63,13 @@
 ### Inserted Text &nbsp;✅ - Welcome, About Me page
 
     <ins> inserted text </ins>
+
+## Supperficials
+
+### Horizontal Rule
+
+    ---
+
+### Code Block (Multiple Lines)
+
+    ```code block```

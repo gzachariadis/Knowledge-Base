@@ -1,4 +1,3 @@
-## Dark Theme
 
 <br>
 
@@ -40,7 +39,7 @@
 
 <div class="spacer"></div>
 
-## 3. Prime Significance Characteristics (Underline)
+## 3. Prime Significance
 
 &nbsp;
 
@@ -58,7 +57,7 @@
 
 <div class="spacer"></div>
 
-## 4. Quote Sources (Small)
+## 4. Quote Sources
 
 &nbsp;
 
@@ -78,7 +77,7 @@
 
 <div class="spacer"></div>
 
-## 5. Outdated/Revised Information (Strikethrough)
+## 5. Revised Information
 
 &nbsp;
 
@@ -138,7 +137,7 @@
 
 <div class="spacer"></div>
 
-## 8. Superficial Emphasis (Italics)
+## 8. Superficial Emphasis
 
 &nbsp;
 
@@ -156,7 +155,7 @@
 
 <div class="spacer"></div>
 
-## 9. Terminology & Definitions (Block Quote)
+## 9. Terminology & Definitions
 
 &nbsp;
 
@@ -174,7 +173,7 @@
 
 <div class="spacer"></div>
 
-## 10. Quotes (Quotes)
+## 10. Quotes
 
 &nbsp;
 
