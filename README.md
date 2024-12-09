@@ -75,8 +75,12 @@ blockquote ------------
 
 ### TO-DO
 
-- [ ] Add a Footer
+- [x] Add a Footer
 - [ ] Fix Heading Structure so heading 5 is heading 4
 - [ ] Set Style of links in content
 - [ ] Align Navigation icons to their text, so they are perfectly aligned
 - [ ] Make the primary navigation bar, non draggable, so it's more static
+- [ ] Automatically, and alphabetically order all lists.
+- [ ] Define the &nbsp; space to be significantly less so it can be used as a separator between consecutive items like lists, blockquotes etc.
+- [ ] Add tags to articles
+- [ ] Set up a default page for when a user first opens the website

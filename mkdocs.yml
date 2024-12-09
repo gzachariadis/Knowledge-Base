@@ -29,7 +29,8 @@ theme:
     - material-extensions
 nav:
   - <i class="hgi-stroke hgi-book-open-01"></i> Start Here:
-    - <i class="hgi-stroke hgi-favourite"></i> Welcome: start-here/index.md
+    - <i class="hgi-stroke hgi-favourite"></i> Welcome: start-here/welcome.md
+    - <i class="hgi-stroke hgi-sticky-note-02"></i> About Me: start-here/about-me.md
     - <i class="hgi-stroke hgi-book-open-02"></i> Glossary: glossary/index.md
     - <i class="hgi-stroke hgi-edit-01"></i> Design Guide: start-here/style-guide.md
   - <i class="hgi-stroke hgi-connect"></i> Home Networking:

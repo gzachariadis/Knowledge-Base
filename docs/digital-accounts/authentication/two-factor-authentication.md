@@ -20,11 +20,17 @@ In most cases, I believe that's **NOT** purposely done in an *evil* way, it's ju
 
 Concluding, we will look at the different ways to perform **Two-Factor Authentication**, understand them, analyze them and compare them based on factors like privacy and security.
 
+
+
+have no connections to the client computer. They typically use a built-in screen to display the generated authentication data, which is manually typed in by the user. This type of token mostly uses a OTP that can only be used for that specific session.[6] 
+
+
 ### Common Implementations
 
-##### <i class="hgi-stroke hgi-command"></i> [Authentication Apps]()
-##### <i class="iconoir-mail"></i> [Email Verification]()
-##### <i class="fa-solid fa-fingerprint"></i> [Hardware Keys]()
-##### <i class="mdi mdi-key-chain-variant"></i> [Password Managers]()
-##### <i class="iconoir-app-notification"></i> [Push Notifications]()
+##### <i class="hgi-stroke hgi-command"></i> [Authentication Apps](two-factor-authentication/methods/authenticator-apps.md)
+##### <i class="iconoir-mail"></i> [Email Verification](two-factor-authentication/methods/email-links.md)
+##### <i class="fa-solid fa-fingerprint"></i> [Hardware Keys](two-factor-authentication/methods/hardware-keys.md)
+##### <i class="mdi mdi-key-chain-variant"></i> [Password Managers](two-factor-authentication/methods/password-managers.md)
+##### <i class="iconoir-app-notification"></i> [Push Notifications](two-factor-authentication/methods/push-notifications.md)
+##### <i class=""></i> [Disconnected Tokens](two-factor-authentication/methods/disconnected-tokens.md)
 ##### <i class="iconoir-chat-lines"></i> SMS Authentication
