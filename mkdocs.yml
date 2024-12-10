@@ -29,26 +29,27 @@ theme:
     - material-extensions
 nav:
   - <i class="hgi-stroke hgi-book-open-01"></i> Start Here:
-    - <i class="hgi-stroke hgi-favourite"></i> Welcome: start-here/welcome.md
-    - <i class="hgi-stroke hgi-sticky-note-02"></i> About Me: start-here/about-me.md
-    - <i class="hgi-stroke hgi-book-open-02"></i> Glossary: glossary/index.md
-    - <i class="hgi-stroke hgi-edit-01"></i> Design Guide: start-here/style-guide.md
+    - <i class="hgi-stroke hgi-favourite"></i> Welcome: index.md
+    - <i class="hgi-stroke hgi-sticky-note-02"></i> About Me: pages/start-here/about-me.md
+    - <i class="hgi-stroke hgi-book-open-02"></i> Glossary: pages/glossary/index.md
+    - <i class="hgi-stroke hgi-edit-01"></i> Design Guide: pages/start-here/style-guide.md
+    - Check Style: pages/language-overviews/index.md
   - <i class="hgi-stroke hgi-connect"></i> Home Networking:
-    - <i class="hgi-stroke hgi-home-wifi"></i> Service Providers: home-networking/service-providers/index.md
-    - <i class="hgi-stroke hgi-computer-phone-sync"></i> Networking Equipment: home-networking/networking/index.md
+    - <i class="hgi-stroke hgi-home-wifi"></i> Service Providers: pages/networking/service-providers/index.md
+    - <i class="hgi-stroke hgi-computer-phone-sync"></i> Network Equipment: pages/networking/hardware/index.md
   - <i class="hgi-stroke hgi-tv-01"></i> Physical Devices:
-    - <i class="hgi-stroke hgi-smartphone-wifi"></i> Smartphone: physical-devices/android-phone/index.md
-    - <i class="hgi-stroke hgi-stroke hgi-computer"></i> Desktop Computer: physical-devices/desktop-computer/index.md
-  - <i class="hgi-stroke hgi-wireless-cloud-access"></i> Software:
-    - <i class="hgi-stroke hgi-geometric-shapes-01"></i> Tools: getting-online/software/index.md
+    - <i class="hgi-stroke hgi-smartphone-wifi"></i> Smartphone: pages/physical-devices/android-phone/index.md
+    - <i class="hgi-stroke hgi-stroke hgi-computer"></i> Desktop Computer: pages/physical-devices/desktop-computer/index.md
+  - <i class="hgi-stroke hgi-wireless-cloud-access"></i> Language Overviews:
+    - <i class="hgi-stroke hgi-geometric-shapes-01"></i> HTML: pages/language-overviews/html/index.md
+    - <i class="hgi-stroke hgi-geometric-shapes-01"></i> Markdown: pages/language-overviews/markdown/index.md
   - <i class="hgi-stroke hgi-user"></i> Digital Accounts:
-    - <i class="hgi-stroke hgi-authorized"></i> Authentication: digital-accounts/authentication/index.md
+    - <i class="hgi-stroke hgi-authorized"></i> Authentication: pages/digital-accounts/authentication/index.md
 extra_css:
-  - assets/css/dark-theme/dark-markdown.css
-  - assets/css/dark-theme/navigation.css
-  - assets/css/dark-theme/footer.css
-  - assets/css/light-theme/light-markdown.css
-  - assets/css/light-theme/navigation.css
+  - css/themes/dark/dark-markdown.css
+  - css/themes/dark/dark-navigation.css
+  - css/base/typography.css
+  - css/layouts/desktop/elements.css
   - https://cdn.jsdelivr.net/gh/iconoir-icons/iconoir@main/css/iconoir.css
   - https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css
   - https://cdn.materialdesignicons.com/6.4.95/css/materialdesignicons.min.css
@@ -58,7 +59,7 @@ extra_css:
   - https://cdn.hugeicons.com/font/hgi-stroke-rounded.css
   - https://use.fontshare.com/css/aesthetic.cs
 extra_javascript:
-  - assets/js/open-in-new-tab.js
+  - scripts/open-in-new-tab.js
 markdown_extensions:
   - footnotes # Enable footnotes under Markdown
   - toc: # Settings for Sidebar Options

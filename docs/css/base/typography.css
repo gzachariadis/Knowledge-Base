@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Indie+Flower&family=Mali:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Quicksand:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Allison&family=Annie+Use+Your+Telescope&family=Grape+Nuts&family=Hachi+Maru+Pop&family=Homemade+Apple&family=Hurricane&family=Just+Me+Again+Down+Here&family=League+Script&family=Meow+Script&family=Norican&family=Pacifico&family=Petemoss&display=swap");
+
+:root {
+  --primary-font: "Quicksand", serif;
+  --secondary-font: "Indie Flower", serif;
+  --default-font-size: 19.5px;
+  --default-line-height: 1.55;
+  --default-font-weight: 400;
+  --default-font-style: normal;
+}
+
+/* --annie: "Annie Use Your Telescope", serif; */
+
+/* -------------------------- LISTS -----------------------------*/
+
+/* Long-Text Lists - Content */
+body .md-content ul li p,
+.md-content ol li p {
+  font-family: var(--primary-font);
+  font-optical-sizing: auto;
+  font-size: var(--default-font-size);
+  font-style: var(--default-font-style);
+  font-weight: var(--default-font-weight);
+  line-height: 1.4;
+}
+
+/* Low-Text Lists - Content */
+body .md-content ul li,
+.md-content ol li,
+.md-content article ul li {
+  font-family: var(--primary-font);
+  font-optical-sizing: auto;
+  font-size: var(--default-font-size);
+  font-style: var(--default-font-style);
+  font-weight: var(--default-font-weight);
+  line-height: 1.4;
+}
+
+/* Lists - Items > Spans */
+.md-content ul li span,
+.md-content ol li span {
+  font-family: var(--secondary-font);
+  font-optical-sizing: auto;
+  font-size: 25px;
+  font-style: var(--default-font-style);
+  font-weight: var(--default-font-weight);
+}
+
+/* -------------------------- PARAGRAPHS -----------------------------*/
+
+/* Paragraphs */
+.md-content p {
+  font-family: var(--primary-font);
+  font-optical-sizing: auto;
+  font-size: var(--default-font-size);
+  font-style: var(--default-font-style);
+  font-weight: var(--default-font-weight);
+  line-height: var(--default-line-height);
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+/* -------------------------- HEADINGS -----------------------------*/
+
+/* Heading h1 */
+.md-content h1 {
+  font-family: var(--secondary-font);
+  font-optical-sizing: auto;
+  font-size: 60px !important;
+  font-style: var(--default-font-weight);
+  font-weight: 400;
+  text-align: center;
+  line-height: 1rem;
+}
+
+/* Heading h2 */
+.md-content h2 {
+  font-family: var(--secondary-font);
+  font-optical-sizing: auto;
+  font-size: 40px !important;
+  font-style: var(--default-font-weight);
+  font-weight: 600;
+  text-align: center;
+}
+
+/* Heading h3 */
+.md-content h3 {
+  font-family: var(--secondary-font);
+  font-optical-sizing: auto;
+  font-size: 37px !important;
+  font-style: 400;
+  font-weight: var(--default-font-weight);
+  line-height: 2rem;
+}
+
+/* Heading h4 */
+.md-content h4 {
+  font-family: var(--secondary-font);
+  font-optical-sizing: auto;
+  font-size: 34px !important;
+  font-style: var(--default-font-style);
+  font-weight: 600;
+  text-align: center;
+  line-height: 1rem;
+}
+
+/* Heading h5 */
+.md-content h5 {
+  font-family: var(--secondary-font);
+  font-optical-sizing: auto;
+  font-weight: 400 !important;
+  font-style: var(--default-font-style);
+  font-size: 29px !important;
+  text-transform: none;
+  text-decoration: none;
+  line-height: 1.2rem;
+}
+
+/* Heading h6 */
+.md-content h6 {
+  font-family: var(--secondary-font);
+  font-optical-sizing: auto;
+  font-size: 25px !important;
+  font-style: var(--default-font-style);
+  font-weight: 600;
+  line-height: 1.4rem;
+}
+
+/* -------------------------- PARAGRAPH ELEMENTS (Markdown) -----------------------------*/
+
+/* Bold Text ---------- concepts */
+.md-content p strong,
+b {
+  font-weight: 400;
+  font-family: var(--secondary-font);
+  font-style: var(--default-font-style);
+  font-size: 21.5px;
+}
+
+/* Italics ----------- superficial emphasis */
+.md-content p em {
+  font-family: var(--secondary-font);
+  font-size: 22.5px;
+  font-style: var(--default-font-style);
+  font-weight: 300;
+}
+
+/* StrikeThrough ----------- outdate/revised information */
+.md-content p del {
+  font-family: var(--secondary-font);
+  font-size: 22.5px;
+  font-style: var(--default-font-style);
+  font-weight: 300;
+}
+
+/* Code ---------------- snippets of code */
+.md-content p code {
+  font-family: var(--secondary-font);
+  font-size: 22.5px;
+  font-style: var(--default-font-style);
+  font-weight: 300;
+}
+
+/* Anchors - Links ----------- internal/external page references */
+.md-content p a {
+  font-family: var(--secondary-font);
+  font-size: 23px;
+}
+
+/* Anchors - After (icon) */
+.md-content p a::after {
+  content: "\f0c1"; /* Unicode for link icon in Font Awesome */
+  font-family: "Font Awesome 5 Free"; /* Use the Font Awesome icon font */
+  font-weight: 600; /* For Font Awesome solid icons */
+  font-size: 0.55em; /* Adjusts the icon size */
+}
+
+/* Footnotes ----------------------- citations to a source */
+.md-content p sup {
+  font-family: var(--primary-font);
+  font-size: 20.5px !important;
+  font-style: var(--default-font-style);
+  font-weight: 300 !important;
+}
+
+/* Blockquotes --------------------- terminology */
+/* !! Find a way for blockquotes to not appear with the line on the side */
+.md-content blockquote p {
+  font-family: var(--secondary-font);
+  font-size: 22px !important;
+  font-style: var(--default-font-style);
+  font-weight: 300 !important;
+}
+
+/* Highlights --------------------- ????????? */
+.md-consent p mark {
+  font-family: var(--secondary-font);
+  font-size: 22px !important;
+  font-style: var(--default-font-style);
+  font-weight: 300 !important;
+}
+
+/* -------------------------- PARAGRAPH ELEMENTS (Markdown) -----------------------------*/
+
+/* Quotes */
+.md-content p q {
+  font-family: var(--primary-font);
+  font-weight: var(--default-font-weight);
+  font-style: var(--default-font-style);
+  font-size: 20px;
+  line-height: 1.7rem;
+}
+
+/* Underlines ---------------- prime significance text*/
+.md-content p u {
+    font-family: var(--primary-font);
+    font-weight: var(--default-font-weight);
+    font-style: var(--default-font-style);
+    font-size: 20px;
+    line-height: 1.7rem; 
+}
+
+/* Inserted Text ------------------ welcome, about me pages */
+.md-content p ins {
+  font-family: var(--secondary-font);
+  text-decoration: none;
+  font-size: 1.05rem;
+  font-weight: 300;
+  font-style: var(--default-font-style);
+  line-height: 1.8rem;
+}
+
+/* Abbreviations -------------------------- ???????? */
+.md-content p abbr {
+  font-family: var(--secondary-font);
+  text-decoration: none;
+  font-size: 1.05rem;
+  font-weight: 300;
+  font-style: var(--default-font-style);
+  line-height: 1.8rem;
+}
+
+/* Span ------------- unused */
+.md-content p span {
+  font-family: var(--secondary-font);
+  font-size: 25.5px;
+}
+
+/* Cite ----------------- unused */
+.md-content p cite {
+  font-size: 26px;
+}
+
+/* Cite Anchor Tags ------------------- unused */
+.md-content p cite a {
+  font-size: 27px;
+}

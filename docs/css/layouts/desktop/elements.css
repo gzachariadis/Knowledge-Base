@@ -1,0 +1,48 @@
+/* Content - Lists */
+.md-content ul,
+.md-content ol {
+  padding-top: 0.6rem;
+  padding-left: 0.4rem;
+  padding-bottom: 0.5rem;
+}
+
+/* Content - Lists - Items > Spans */
+.md-content ul li,
+.md-content ol li {
+  padding-bottom: 0.4rem;
+}
+
+/* Heading h1 */
+.md-content h1 {
+  padding-top: 2rem;
+  margin-bottom: 2rem !important;
+}
+
+/* Heading h2 */
+.md-content h2 {
+  margin-top: 2rem;
+  padding-bottom: 0.1rem;
+}
+
+/* Heading h3 */
+.md-content h3 {
+  margin-top: 1.3rem;
+}
+
+/* Heading h4 */
+.md-content h4 {
+  padding-top: 1rem;
+  margin-bottom: 1.8rem;
+}
+
+/* Heading h5 */
+.md-content h5 {
+  padding-top: 1.5rem;
+  margin-bottom: 0rem !important;
+  padding-bottom: 0.5rem !important;
+}
+
+/* Heading h6 */
+.md-content h6 {
+  padding-top: 0.5rem;
+}

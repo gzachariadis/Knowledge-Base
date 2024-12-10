@@ -1,0 +1,116 @@
+/* Markdown content */
+
+:root {
+    --primary-yellow: #faf880;
+    --primary-pink: #e7a6bd;
+    --secondary-pink: #ffc0cb;
+    --primary-orange: #FF5733;
+    --primary-color: bisque;
+}
+
+/* Content - Lists - Items > Spans */
+[data-md-color-scheme="slate"] .md-content ul li span, .md-content ol li span {
+    color: var(--primary-color);
+}
+
+/* Paragraph > Links */
+[data-md-color-scheme="slate"] .md-content p a {
+    color: var(--secondary-pink);
+}
+
+/* Paragraph > Links : Hover */
+[data-md-color-scheme="slate"] .md-content p a:hover {
+    color: var(--primary-color);
+}
+
+/* Bold Text */
+[data-md-color-scheme="slate"] .md-content p strong, b {
+    color: var(--secondary-pink);    
+}
+
+/* Italics */
+[data-md-color-scheme="slate"] .md-content em {
+    color: var(--primary-yellow);    
+}
+
+/* Paragraph > Span */
+[data-md-color-scheme="slate"] .md-content p span {
+    color: var(--primary-color);
+}
+
+/* Heading h1 */
+[data-md-color-scheme="slate"] .md-content h1 {
+   color: var(--primary-color);
+}
+
+/* Heading h2 */
+[data-md-color-scheme="slate"] .md-content h2 {
+    color: var(--primary-color);
+}
+
+/* Heading h3 */
+[data-md-color-scheme="slate"] .md-content h3 {
+    color: var(--primary-color);
+}
+
+/* Heading h4 */
+[data-md-color-scheme="slate"] .md-content h4 {
+    color: var(--primary-color);
+}
+
+/* Heading h5 */
+[data-md-color-scheme="slate"] .md-content h5 {
+    color: var(--primary-color) !important;
+}
+
+/* Heading h6 */
+[data-md-color-scheme="slate"] .md-content h6 {
+    color: var(--primary-color);
+}
+
+[data-md-color-scheme="slate"] .md-typeset h5, .md-typeset h6 {
+    color: var(--md-default-fg-color--light);
+    font-size: .8em;
+    font-weight: 700;
+    letter-spacing: -.01em;
+    margin: 0.5em 0;
+}
+
+[data-md-color-scheme="slate"] .md-content h5 i {
+    color: var(--secondary-pink);
+    padding-left: 20px;
+    padding-right: 5px;
+    padding-bottom: 11px;
+    vertical-align:middle;
+    align-items: center; /* Vertically centers the items (icon + text) */
+    line-height: 1.5;
+}
+
+[data-md-color-scheme="slate"] .md-content a::after {
+    margin-left: 5px; /* Adds a small gap between the text and the icon */
+    display: inline-block;
+    vertical-align: 0.90em; /* Moves the icon slightly above the text */
+}
+
+[data-md-color-scheme="slate"] .md-content p q{
+    display: block;
+    margin-left: 1.6rem;
+    color: var(--primary-yellow);
+}
+
+[data-md-color-scheme="slate"] .md-content p ins {
+    display: block;
+    margin-left: 30px;
+}
+
+[data-md-color-scheme="slate"] .md-content p cite {
+    display: inline-flex;  /* Use inline-flex to align items horizontally */
+    align-items: center;   /* Vertically center items */
+    margin: 0;
+    padding: 0;
+    margin-left: 2.5rem;
+}
+
+[data-md-color-scheme="slate"] .md-content p cite i {
+    margin-right: 0.5rem;  /* Space between the icon and the text */
+}

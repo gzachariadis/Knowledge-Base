@@ -84,3 +84,4 @@ blockquote ------------
 - [ ] Define the &nbsp; space to be significantly less so it can be used as a separator between consecutive items like lists, blockquotes etc.
 - [ ] Add tags to articles
 - [ ] Set up a default page for when a user first opens the website
+- [ ] Add a progress bar that shows how deep you are in an article, like how far
