@@ -1,0 +1,103 @@
+/* Markdown content */
+
+:root {
+  --primary-yellow: #faf880;
+  --primary-pink: #e7a6bd;
+  --secondary-pink: #ffc0cb;
+  --primary-orange: #ff5733;
+  --primary-color: bisque;
+}
+
+/* -------------------------- LISTS -----------------------------*/
+
+/* Content - Lists - Items > Spans */
+[data-md-color-scheme="slate"] .md-content ul li span,
+.md-content ol li span {
+  color: var(--primary-color);
+}
+
+/* -------------------------- PARAGRAPH ELEMENTS (Markdown) -----------------------------*/
+
+/* Paragraph > Anchors */
+[data-md-color-scheme="slate"] .md-content p a {
+  color: var(--secondary-pink);
+}
+
+/* Paragraph > Links : Hover */
+[data-md-color-scheme="slate"] .md-content p a:hover {
+  color: var(--primary-color);
+}
+
+/* Bold Text ------------------------- concepts */
+[data-md-color-scheme="slate"] .md-content p strong,
+b {
+  color: var(--primary-yellow);
+}
+
+/* Italics  -------------------------- superficial emphasis */
+[data-md-color-scheme="slate"] .md-content em {
+  color: var(--secondary-pink);
+}
+
+/* Paragraph > Span -----------------  ???????????????????? */
+[data-md-color-scheme="slate"] .md-content p span {
+  color: var(--primary-color);
+}
+
+/* Paragraph > Quotes ------------------------ */
+[data-md-color-scheme="slate"] .md-content p q {
+  color: var(--primary-yellow);
+}
+
+/* Paragraph > Blockquotes ------------------ ???????? */
+[data-md-color-scheme="slate"] .md-content blockquote p {
+  color: var(--primary-color);
+}
+
+/* -------------------------- HEADINGS -----------------------------*/
+
+/* Heading h1 */
+[data-md-color-scheme="slate"] .md-content h1 {
+  color: var(--primary-color) !important;
+}
+
+/* Heading h2 */
+[data-md-color-scheme="slate"] .md-content h2 {
+  color: var(--primary-color) !important;
+}
+
+/* Heading h3 */
+[data-md-color-scheme="slate"] .md-content h3 {
+  color: var(--primary-color) !important;
+}
+
+/* Heading h4 */
+[data-md-color-scheme="slate"] .md-content h4 {
+  color: var(--primary-color) !important;
+}
+
+/* Heading h5 */
+[data-md-color-scheme="slate"] .md-content h5 {
+  color: var(--primary-color) !important;
+}
+
+/* Heading h6 */
+[data-md-color-scheme="slate"] .md-content h6 {
+  color: var(--primary-color);
+}
+
+/* ?????????????? */
+[data-md-color-scheme="slate"] .md-typeset h5,
+.md-typeset h6 {
+  color: var(--md-default-fg-color--light);
+}
+
+/* Headings > Anchors */
+[data-md-color-scheme="slate"] .md-content h1 a,
+.md-content h2,
+.md-content h3 a,
+.md-content h4 a,
+.md-content h5 a,
+.md-content h6 a {
+  color: var(--primary-color) !important;
+}

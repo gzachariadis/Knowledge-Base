@@ -4,152 +4,167 @@ alias: wuthering-heights
 
 # <i class="hgi-stroke hgi-lock-key"></i> Passkeys
 
-<br><span>#Definition</span>
+<br> 
 
-> A **passkey** is a type of *"digital key"* used to log into websites and apps, passkeys use your device, like your phone or computer, to securely authenticate your identity. 
+##### #Definition
+
+> A **passkey** is a type of **"digital key"** used to log into websites and apps, passkeys use your device, like your phone or computer, to securely authenticate your identity. 
 
 ## Introduction
 
-Passkeys are a newer, more secure way to log in to services without relying on passwords. The [FIDO Alliance](https://fidoalliance.org/), responsible for the standard, considers it the next step towards a passwordless future.
+Passkeys are a newer standard, aimed at allowing passwordless login to services. The [FIDO Alliance](https://fidoalliance.org/), responsible for the standard, considers it the next step towards a passwordless future.
 
-The ultimate goal is an attempt to eliminate the need for passwords entirely. Instead of storing or typing passwords, the FIDO Alliance, would like the web to switch to relying on cryptographic keys stored securely on hardware devices.
+The ultimate goal of the standard, is an attempt to <u>eliminate the need for passwords</u> *ENTIRELY*. 
 
-So, even if someone wants to gain access to your account, they can't **without access to your physical device**, they simply cannot access the private-key to impersonate you.
+Instead of coming up with, storing and typing/filling in passwords, the [FIDO Alliance](https://fidoalliance.org/), would like the Web to switch on relying to **cryptographic keys** stored securely on hardware devices.
 
-The main point you should keep in mind is that, since there is **no password to steal**, passkeys are **far less vulnerable to hacks like phishing, database breaches, or keylogging**.
+So,  <span>theoretically, at least, </span> if someone wants access to your account, they can't impersonate you - *without the* **private-key** - which is securely stored on a device <u>you *physically possess*</u>.
+
+The main point you should keep in mind is that, since there is *no password to steal*, **Passkeys** are *far less vulnerable* to attacks like **phishing**, **database breaches**, or **keylogging**.
 
 ## How does it work?
 
-Unlike the traditional passwords, passkeys are algorithmically generated using **public-key asymmetric cryptography**. This means that, in order to prove ownership of an account, instead of typing in a password, you can now use a private-key to authenticate your identity to a platform.
+Unlike the traditional passwords, passkeys are algorithmically generated using **public-key asymmetric cryptography**. This means that, in order to prove ownership of an account, instead of typing in a **password**, you can now use a **private-key** to authenticate your identity to a platform.
 
-When you set up a passkey, your device stores a special pair of keys 
+In order for **Passkeys** to work, your device stores a special pair of keys a **public key**, shared with the website or app and a **private-key**, which is kept *secret* <u>on your device</u>.
 
-- public key (shared with the website or app)
-- private-key (kept secret on your device)
+When you attempt a login, the website or app sends a request, and your device uses the **private-key** to confirm account ownership. 
 
-When you attempt a login, the website or app sends a request, and your device uses the private-key to confirm account ownership. In reality, it's must more complicated than that, but we are here to explain concepts, not get too much into technical specifics.
+In reality, it's must more complicated than that, but we are here to explain concepts, not get too much into technical specifics.
 
-The best part about this new standard for both users and companies alike, is **getting rid of passwords**. On top of that, you never have to type anything, and the **private-key doesn't ever leave your device**, making passkeys **extremely secure**, under proper management.
+The best part about this new standard for both users and companies alike, is **getting rid of passwords**. More on that later...
+
+<span>What are you to gain as a user? you might ask...</span> Well, this new standard eliminates the need for *memorizing or typing passwords*, and considering the **private-key** *never leaves* your device, **Passkeys** are *extremely secure*, under the *proper management*.
 
 ## Passkey Types
 
-> We are only concerned here with the consumer scenario.
-
 ### Device-Bound
 
-Device-bound passkeys are a type of security key that are tied directly to a specific device, such as your phone, laptop, or hardware key. This is the default, when it comes to passkeys as their purpose is to associate a specific device, through the use of a private-key to a specific account.
+Device-bound **Passkeys** are a type of **security-key** that are *tied directly to a specific device*, such as your phone, laptop, or **hardware-key** device. 
 
-When you use a device-bound passkey, your device stores a unique key that is only usable on that device. This means that even if someone tries to hack into your account, they would need physical access to your specific device to gain entry.
+This is the default, when it comes to **Passkeys** as their purpose is to associate a specific device to a specific account.
 
-It's worth noting that while the private-key is device-bound, if that two devices can come into **proximity** and **prove presence**, for example with *[NFC](../../../../glossary/near-field-communication.md)* or *Bluetooth*, the private-key can still be accessed remotely. This creates a form of **“syncing”** between devices, because the private-key never leaves the actual hardware device, but the *authenticator module*, can **"roam"** between devices. 
+When you use a **device-bound Passkey**, your device stores a unique key that is <u>*only stored*</u> on that device. This means that for an intruder to successfully login into your account, he/she would require physical access to your specific device to authorize entry.
 
-Device-bound passkeys, on multiple devices can be **time-consuming** the first-time around; requiring you to go through each of the services that support it, and sit through the process of associating it with your account. Think of it, like changing your password to all your accounts, all at once.
+??? danger "Pay Attention!"
+
+    It's worth noting that while the private-key is device-bound, the **Authenticator Module**, can be triggered <span>"remotely"</span>, under certain conditions; 
+    
+    One being, two devices coming into **proximity** and **proving presence**, for example with *[NFC](../../../../glossary/near-field-communication.md)* or *Bluetooth*, the private-key can still be accessed <u>*"essentially remotely"*</u>. This creates a form of **“syncing”** between devices, because the private-key never leaves the *actual hardware device*, but the *Authenticator Module*, can <span>"roam"</span> and authenticate between devices. 
+
+
+**Device-bound Passkeys**, on multiple devices can be *time-consuming*, especially, the first-time around; requiring you to go through each of the services that support it, and sit through the process of associating them with your account. Think of it, a bit like, changing your password to all your accounts, all at once; 
+
+<span>...just a pain in the ass!</span>
+
 
 ##### Usage Tips
 
-- <span>Backup, Backup, Backup</span> — Device bound passkeys, are susceptible to hardware loss or failure, both of those, can result in being **temporarily or permanently locked out of accounts**. Many companies advise purchasing **hardware keys in pairs**, to avoid exactly this scenario.
+- <span>Backup, Backup, Backup</span> — **Device-bound Passkeys**, are susceptible to *hardware loss* or *hardware failure*, both of those, can result in being <u>*temporarily or permanently locked*</u> out of accounts. Many companies advise purchasing **hardware-keys** <u>*in pairs*</u>, to avoid exactly this scenario.
 
-- <span>Separation of Access</span> — The average user possesses more than one device, be it a laptop and a phone, multiple mobile phones or physical hardware keys, that means that, you can **initiate separate private-keys for each of your devices; a way to independently authenticate**. On top of that, it's an unofficial form of backup, making you less likely to be locked out of your accounts.
+- <span>Separation of Access</span> — The average user possesses more than one device, be it a laptop and a phone, multiple mobile phones or even multiple physical **hardware-keys**, that means that, you can initiate *separate* **Passkeys** for <u>*each of your devices*</u>; a way to <u>*independently*</u> *authenticate*. On top of that, it's an unofficial form of backup, making you less likely to be locked out of your accounts.
 
 ### Cloud Syncing
 
-Passkeys, by default, are **unique** to each service, and **device**. Having said that, they can be **synced and backed up across devices**, preferably through a *Password Manager* or by an end-to-end encrypted **Cloud Service Provider**. 
+Passkeys, by default, are *unique to each service and device*. Having said that, they can be *synced* and *backed up across devices*, preferably through a **Password Manager** or by an end-to-end encrypted **Cloud Service Provider**. 
 
-The syncing of private-keys, typically, happens through cloud services like **iCloud Keychain** (for Apple devices) or **Google Passwords** (for Android/Chrome devices). These services securely sync private-keys across your devices, allowing you to login to your accounts using the **same private-key on multiple devices**.
+The syncing of **Passkeys**, or in reality, **private-keys**, typically, happens through **cloud services** like *iCloud Keychain* (for Apple devices) or *Google Passwords* (for Android/Chrome devices). These services securely sync private-keys across your devices, allowing you to login to your accounts using the *same* **Passkey** *on multiple devices*.
 
-That's worth explaining a bit more, when you set up a passkey on a device, like your phone, the private-key is usually **stored on device**. In this case, it's **stored on the cloud**. Your cloud account becomes this **private vault**, where your private-keys are stored and securely synced, or better put, accessed from your devices ensuring you can authenticate/prove account-ownership on any device with access to your cloud account. Careful of that last part, that doesn't mean only your devices.
+That's worth explaining a bit more...
+
+When you set up a passkey on a device, like your phone, for example, the **private-key** is typically *stored on device*. Under this scenario, it's **stored on the cloud**. 
+
+Your cloud storage becomes this **private vault**, where your **private-keys** are stored and securely *synced*, or better put, *accessed* by your devices ensuring you can prove account-ownership via <u>*ANY*</u> *device* that has access to your cloud account. Careful of that last part, that doesn't mean only your devices.
 
 ##### Usage Tips
 
-- <span>Encryption</span> — Make sure the private-key is **always** remains **encrypted** during syncing, which means it cannot be read or intercepted by anyone; even the service providers (like Apple or Google). Only your devices should be able to decrypt your private-key.
+- <span>Encryption</span> — Make sure the **Passkey** <u>*always remains encrypted*</u>, especially during syncing, which means it cannot be accessed or intercepted; especially when using service providers, like Apple or Google. I can't stress this enough, <u>*only your devices should be able to decrypt your private-key.*</u>
 
-- <span>Stewardship</span> — Remember, private-keys are as secure, as the place you store them; in this case, **the service provider servers**. This means, that, you take responsibility and **assign stewardship**, as well as, security upon the service provider, to prevent your private-keys against unauthorized access, theft, hacking or loss.
+- <span>Stewardship</span> — Remember, **private-keys** are <u>as secure, as the place you store them</u>; under this scenario, *the service provider servers*. This means, that, you take *responsibility* and *assign stewardship* upon the service provider, to prevent your **private-keys** against threats like *unauthorized access*, *theft*, *hacking* or *data loss*, just to name a few.
 
-- <span>Ecosystem Bound</span> — Stewardship has to be with someone, if you use Apple's **iCloud** for syncing passkeys, you won’t be able to use it on an **Android** device, you are eco-system bound to use Apple devices. Of course, you can by-pass this problem, by assigning stewardship to a third-party like a *Password Manager*, but at the end of the way, the stewardship has to be relied-upon someone.
+- <span>Third Party Reliance</span> — Stewardship has to be with someone, if you use *iCloud* for syncing **Passkeys**, you won’t be able to use it on an *Android* device, you are <u>*eco-system bound*</u> to use *Apple* devices. You can always *bypass this problem*, by assigning stewardship to a *third-party* like a **Password Manager**, but at the end of the day, the stewardship has to be relied-upon someone.
 
-- <span>Vulnerability</span> — While syncing your private-key across devices offers convenience, giving you the freedom to access your accounts from any device, it also exposes all your devices to risk, **if one is compromised**, **all devices using that synchronized private-key could be at <u>risk</u>,** possibly resulting in your being locked out of your accounts.
+- <span>Vulnerability</span> — While syncing your private-key across devices offers convenience, giving you the freedom to access your accounts from any device, it also exposes all your devices to risk, if one is *compromised*, all of the devices using that synchronized **private-key** <u>*could be at risk*</u>. This situation can lead in you, quite possibly, being <u>*locked out*</u> of your accounts.
   
-- <span>Shareability</span> — You share one private-key between devices, making you susceptible to being locked out. This means that, if anything, you reduced security compared to device-bound private-keys, and ended up switching your threat-factors from hardware failure or loss to software-related like hacking, wipe of device or being locked out of your cloud account.
+- <span>Conflictions</span> — Under this scenario, you decide to opt for sharing <u>*ONE*</u> **private-key** between devices. This means that, if anything, you *reduced security compared to* **Device-bound Passkeys**, and ended up switching your **threat-factors** from *hardware related* ones, like *theft*, *hardware loss* or *physical damage* to software-related like *hacking*, *online identity theft* or simply being locked out of your cloud service provider's account.
 
-<span>Conclusion</span>
+##### Conclusion
 
-Device-bound passkeys are **inherently secure**, provided they’re properly managed. However, this security comes with its own set of challenges—most notably, the **high cost of hardware keys** and **shouldering the responsibility of stewardship over your data**.
+**Device-bound Passkeys** are *inherently secure*, <u><span>provided they’re properly managed</span></u>. However, this security comes with its own set of challenges—most notably, the *high cost of hardware keys* and *shouldering the responsibility of stewardship* over your data.
 
-On the other hand, cloud-based passkeys **shift the burden of management away from you**. By entrusting a cloud service provider to store and protect your private-keys, you gain the convenience of automated maintenance and remote access. However, this trade-off comes with a compromise in privacy and security, as you must trust your provider to safeguard your keys from hackers and ensure you’re never locked out of your own data.
+On the other hand, **Cloud-based Passkeys** *shift the burden of management away from you*. By entrusting a **cloud service provider** to store and protect your **private-keys**, you gain the *convenience of remote access*. However, this <span>painfully realistic trade-off</span> comes with a *compromise in privacy and security*, as you must <u>*trust*</u> your service provider to safeguard your keys from hackers and ensure you’re never locked out of your own data.
 
-Ultimately, the choice between device-bound and cloud-based passkeys depends on your priorities — whether you value maximum security and control at the cost of some manual-work and potentially associated costs or prefer the convenience of cloud management at the cost of some privacy. The decision is yours to make, and it’s important to weigh the pros and cons based on what matters most to you.
+Ultimately, the choice between **Device-bound Passkeys** and **Cloud-based Passkeys** depends on your priorities — whether you value maximum security and control at the cost of some manual-work and potentially associated costs or prefer the convenience of cloud stewardship at the cost of some privacy. The decision is yours to make, and it’s important to weigh the pros and cons based on <u>*what matters most to you*</u>.
 
 ## Security
 
-One of my first questions, researching this was <q>"How is this an improvement if I am already using a randomly generated non-identifiable password on each site?”</q> Let’s answer it…
+One of my first questions, researching this was <span>"How is this an improvement if I am already using a randomly generated non-identifiable password on each site?”</span>
 
-TLDR; and without getting into technical details, **passkeys are as secure as the method you store them**. Additionally, **the same as passwords, your private-keys, can be stolen, just less easily...**
+TLDR; and without getting into technical details, I said it before, I will say it again <u>**Passkeys** *are as inherently as secure as the method you store them*</u>. Additionally, the same as **passwords**, your **private-keys**, *can be stolen*, <span>just less easily...</span>
 
 #### Passwords vs Passkeys 
 
-First, let's compare passwords to passkeys...Under the current infrastructure, most accounts use a traditional password, which is something **you create**, usually a combination of letters, numbers, and symbols, that you use to log into your accounts. 
+<span>First things first, let's compare **Passwords** to **Passkeys**...</span> 
 
-Hopefully, most of us at least, use a *Password Manager* and apply the recommended principles. **Righttttttt?** Well, some people do, **most don’t**, and that's exactly who the enemy of the current system is — **people**.
+Under the current infrastructure, most accounts use a traditional **password**, which is something *you create*, you come up with it, or use a **random password generator**, and you utilize that to login to your accounts. 
 
-> People left to their own devices, will come up with memorable, non-secure, reusable passwords. 
+Hopefully, most of us, at least, use a **Password Manager** or another secure method and apply the *recommended* principles. <span>Righttttttt?</span> 
 
-Who do we know? **Data Breaches**; there have been tons of them.
+Well, some people do, <u>*most don’t*</u>, and that's exactly who the <span>"enemy"</span> of the current system is — <u>*people*</u>.
 
-Which brings us to our second enemy, **companies**. Some companies are terrible at managing passwords, they store them with no encryption, have faulty infrastructure, get hacked all the time...so, can you really trust them? Think about how many accounts you have, trust a few, yeah, but all? Didn't think so...
+> People left to their own devices, will come up with memorable, *non-secure*, reusable passwords. 
 
-As you can see, currently, both sides of the current infrastructure cause problems, so what do we have to gain by switching? 
+Who do we know? **Data Breaches**, which brings us to our second enemy, <u>*companies*</u>. 
 
-Well, take a closer look...
+Some companies are *terrible* at managing passwords, they store them with no encryption, have faulty infrastructure, get hacked all the time...<span>so, can you really trust them?</span> Think about how many online accounts you have, <span>trust a few? Sure, but do you *FULLY* trust every company you ever had an account with? Didn't think so...</span>
+
+As you can see, currently, both sides of the current infrastructure cause problems, <span>so what do we have to gain by switching?</span>
+
+Well, let's take a closer look...
 
 ##### Advantages
 
-- <span>Zero Reusability</span> — Passkeys are not reusable, they can't be stolen and re-used just like passwords can.
+- <span>Zero Reusability</span> — Compared to **Passwords**, **Passkeys** are <u>*not reusable*</u>, they can't be stolen and re-used on different websites.
   
-- <span>Inherent Security</span> — RSA cryptographic keys are so long, it’s a virtual impossibility to break them, compared to weak passwords that can be easily cracked.
+- <span>Inherent Security</span> — Compared to *weak passwords* that can be <u>*easily cracked*</u>, **RSA** cryptographic keys are sooooo long, it’s a *virtual impossibility to break them*.
 
-- <span>Zero Knowledge Approach</span> — We have no access to see how our passwords are stored on a company’s servers, whether they are encrypted, properly secured etc.
+- <span>Freedom</span> — We have no access to see how our **Passwords** are stored on a company’s servers, with **Passkeys** you are given control over how you want to store your **private-keys**.
 
-- <span>Convenience</span> — No retyping passwords, come up with new ones and having to change them all the time.
+- <span>Convenience</span> — *No retyping* **Passwords**, coming up with new ones and having to change them all the time.
 
-- <span>Enforced Security</span> — Passwords can be stolen in a myriad of ways, even through the mere action of copying them in the clipboard, passkeys are inherently more secure.
+- <span>Enforced Security</span> — **Passwords** can be stolen in a myriad of ways, even through the mere action of copying them in the clipboard, **Passkeys** are <u>*inherently more secure*</u> by design.
 
-- <span>Data Breach Protection</span> — Your private-keys are not susceptible to data breach on the website/app’s server, meaning it can't be stolen, the server only stores your public key, useless by itself to an attacker trying to impersonate you to gain access to your account.
+- <span>Data Breach Protection</span> — Your **private-keys** are <u>*not susceptible*</u> to theft through a **data breach** on the website/app’s server, meaning they can't be stolen. The server only stores your **public key**, which is essentially useless by itself, to an attacker trying to impersonate you to gain access to your account.
 
-- <span>Expiration Date</span> —  Compared to passwords, passkeys don’t expire, you won't need to change them regularly, because your private-keys are constant.
+- <span>Expiration Date</span> —  Compared to **Passwords**, **Passkeys** <u>*don’t expire*</u>, you won't need to change them regularly.
 
-- <span>No Reliance on Human Cognition</span> — You don't have to remember your password.
+- <span>No Reliance on Human Cognition</span> — That's semi-fair point, you don't have to memorize your **Passkey**, but securing it might include a **pass-code**, **PIN** or **Password** that you might need to memorize.
 
-- <span>Phishing Protection</span> — Passkeys stop phishing attacks. Since you don’t manually type anything to log in, a hacker can’t trick you into entering your password on a fake website. The authentication process relies on your device, so it only works on the legitimate website or app.
+- <span>Phishing Protection</span> — Passkeys stop **phishing attacks**. Since you don’t manually type anything to log in, a hacker can’t trick you into entering your **Password** on a fake website. The authentication process relies on your device, so it <u>*ONLY*</u> works on the legitimate website or app.
 
 ##### Disadvantages
 
-- <span>Hackable</span> — Same as passwords, passkeys are only as safe as the place you store them.
+- <span>Hackable</span> — Same as **Passwords**, **Passkeys** are only as safe as the place you store them.
 
-- <span>Limited Availability</span> — Currently, lacking the universal support passwords enjoy. Here's a couple lists to check support right [here]() and [here.](https://github.com/bitwarden/passkeys-index )
+- <span>Limited Availability</span> — Currently, lacking[^1] the universal support **Passwords** enjoy.
 
-- <span>Non-Compartmentalized (by Default)</span> — Can be stored in the same device as your passwords & 2FA codes.
-
-#### Technical Specifics  
-
-> Caution! You can skip this part in case you are not interested in details about how these protocols work.
-
-##### WebAuthN
-
-WebAuthN (Web Authentication), a **web standard** that allows websites to authenticate users securely without relying on passwords; it is what passkeys rely on to verify your account ownership over cryptographic keys. This security module, comes pre-installed on your device as part of the Operating System. 
-
-When you try to log in to a website, the website communicates with your device through JavaScript via the client, prompting a login action. When successful, the website and your device exchange a challenge that the device is meant to solve. Upon completion, the website verified the challenge solution and a successful login occurs.
-
-For this process to work, both the operating system's authenticator and the device performing the login need to be in close proximity. This is why the authentication relies on various methods to prove proximity, such as Bluetooth, [NFC](../../../../glossary/near-field-communication.md) or USB[^1].
+- <span>Non-Compartmentalized (by Default)</span> — Potentially stored in the same device, software solution as your **Passwords** & [Two-Factor Authentication]() codes.
 
 #### Privacy Concerns
 
+This section is focused solely on the *consumer scenario* and does not address any *business*, *professional*, or other *use cases*. The information provided is tailored to **individual consumer interests** and may not be applicable or suitable for you. 
+
+Proceed with this in mind, as the advice and insights are specific to consumer-oriented concerns.
+
+<br>
+
 ###### Biometrics
 
-Passkeys handle authentication directly on your device. To use a passkey stored on device, you need to provide your unlock PIN or to decrypt your private key using the biometric sensor.
+Biometrics handle authentication directly on your device. To use a **Passkey** stored on device, you need to provide your *unlock PIN* or to *decrypt* your **private-key** using a biometric sensor.
 
-As far as I know, laptops, but more importantly, phones **don't send biometric data to manufacturers**. I strongly believe that the biometric data associated with authentication is stored locally on device (both in the case of laptops and phones). 
+As far as I know, laptops, but more importantly, phones <u>*don't send biometric data to manufacturers*</u>. I strongly believe that the biometric data associated with *device unlock authentication* are *stored locally on device* (both in the case of laptops and phones). 
 
-In case, that has changed somehow, or is not the currently the case, I would advise against using biometrics to unlock your passkeys. Under the same principle, I would advise against storing any identity documents (passport, driving license, identity card) in the cloud or sharing them with third-parties.
+In other cases, it may be sent to the cloud or stored on servers for processing, in that case, I would advise against using biometrics to unlock your passkeys, because some biometric systems may be integrated with third-party services. If you use a service that shares biometric data across platforms (e.g., social media facial recognition, or payment systems), it can expose your data to additional privacy risks.
 
 ###### But how do biometrics work?
 
@@ -265,7 +280,7 @@ Some other authenticator installed on the device Microsoft Authenticator
 
 - Where to store my passkeys? Hardware or Software?
 
-[^1]: Hardware connections like USB (Universal Serial Bus) are considered peripherals, therefore, proximity is not necessary and it's proved through physical connection.
+[^1]: Here's a couple lists to check compatibility and support right [here]() and [here.](https://github.com/bitwarden/passkeys-index)
 
 ## Sources
 

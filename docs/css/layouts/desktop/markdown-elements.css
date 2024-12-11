@@ -1,0 +1,121 @@
+
+/* -------------------------- Lists (Markdown) -----------------------------*/
+
+/* Content - Lists */
+.md-content ul,
+.md-content ol {
+  padding-top: 1.5rem;
+  padding-left: 1.3rem;
+  margin: 0 !important; /* Reset margin for list items */
+}
+
+/* Content - Lists - Items > Spans */
+.md-content ul li,
+.md-content ol li {
+  padding-bottom: 0.4rem;
+}
+
+/* Content - Lists - Items > Paragraph */
+.md-content ul li p,
+.md-content ol li p {
+  padding-left: 0.1rem !important;
+}
+
+/* -------------------------- PARAGRAPH ELEMENTS (Markdown) -----------------------------*/
+
+/* Paragraph Elements --- Inserted Text */
+.md-content p ins {
+  display: block;
+  margin-left: 30px;
+}
+
+/* Paragraph > Cite --------------------------------- ????????????????? */
+.md-content p cite {
+  display: inline-flex; /* Use inline-flex to align items horizontally */
+  align-items: center; /* Vertically center items */
+  margin: 0;
+  padding: 0;
+  margin-left: 2.5rem;
+}
+
+/* Paragraph > Cite > Italics ----------------------- ????????????? */
+.md-content p cite i {
+  margin-right: 0.5rem; /* Space between the icon and the text */
+}
+
+/* Paragraph > Links : After */
+.md-content p a::after {
+  margin-left: 5px; /* Adds a small gap between the text and the icon */
+  display: inline-block;
+  vertical-align: 0.9em; /* Moves the icon slightly above the text */
+}
+
+/* Paragraph > Quotes ------------------------ */
+.md-content p q {
+  display: block;
+  margin-left: 1.6rem;
+}
+
+/* Paragraph > Blockquote (block) */
+.md-content blockquote {
+  border-left: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.md-content blockquote p::before {
+  content: "“"; /* Opening quote */
+  font-size: 1.2em; /* Adjust size as needed */
+  margin-right: 0.3rem;
+}
+
+.md-content blockquote p::after {
+    content: "”"; /* Closing quote */
+    font-size: 1.2em; /* Adjust size as needed */
+    margin-left: 0rem !important;
+    padding: 0rem !important;
+}
+
+
+/* -------------------------- HEADINGS (Markdown) -----------------------------*/
+
+/* Heading h1 */
+.md-content h1 {
+  padding-top: 2rem;
+  margin-bottom: 2rem !important;
+}
+
+/* Heading h2 */
+.md-content h2 {
+  margin-top: 2.5rem;
+  padding-bottom: 1.5rem;
+}
+
+/* Heading h3 */
+.md-content h3 {
+  margin-top: 1.3rem;
+}
+
+/* Heading h4 */
+.md-content h4 {
+  padding-top: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+/* Heading h5 */
+.md-content h5 {
+  padding-top: 1rem;
+  margin-bottom: 0rem !important;
+  padding-bottom: 0.5rem !important;
+}
+
+/* Heading h6 */
+.md-content h6 {
+  padding-top: 0.8rem;
+  padding-bottom: 0.3rem;
+}
+
+/* ??????????????????? */
+.md-typeset h5, .md-typeset h6 {
+  margin: 0.5em 0;
+}

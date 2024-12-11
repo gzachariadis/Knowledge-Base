@@ -16,13 +16,12 @@
 
 /* Long-Text Lists - Content */
 body .md-content ul li p,
-.md-content ol li p {
+.md-content ol li p{
   font-family: var(--primary-font);
-  font-optical-sizing: auto;
   font-size: var(--default-font-size);
   font-style: var(--default-font-style);
   font-weight: var(--default-font-weight);
-  line-height: 1.4;
+  line-height: 1.55 !important;
 }
 
 /* Low-Text Lists - Content */
@@ -42,7 +41,7 @@ body .md-content ul li,
 .md-content ol li span {
   font-family: var(--secondary-font);
   font-optical-sizing: auto;
-  font-size: 25px;
+  font-size: 26.5px;
   font-style: var(--default-font-style);
   font-weight: var(--default-font-weight);
 }
@@ -67,7 +66,7 @@ body .md-content ul li,
 .md-content h1 {
   font-family: var(--secondary-font);
   font-optical-sizing: auto;
-  font-size: 60px !important;
+  font-size: 76px !important;
   font-style: var(--default-font-weight);
   font-weight: 400;
   text-align: center;
@@ -78,9 +77,9 @@ body .md-content ul li,
 .md-content h2 {
   font-family: var(--secondary-font);
   font-optical-sizing: auto;
-  font-size: 40px !important;
+  font-size: 46px !important;
   font-style: var(--default-font-weight);
-  font-weight: 600;
+  font-weight: 400;
   text-align: center;
 }
 
@@ -88,7 +87,7 @@ body .md-content ul li,
 .md-content h3 {
   font-family: var(--secondary-font);
   font-optical-sizing: auto;
-  font-size: 37px !important;
+  font-size: 35px !important;
   font-style: 400;
   font-weight: var(--default-font-weight);
   line-height: 2rem;
@@ -98,9 +97,9 @@ body .md-content ul li,
 .md-content h4 {
   font-family: var(--secondary-font);
   font-optical-sizing: auto;
-  font-size: 34px !important;
+  font-size: 35px !important;
   font-style: var(--default-font-style);
-  font-weight: 600;
+  font-weight: 400;
   text-align: center;
   line-height: 1rem;
 }
@@ -111,7 +110,7 @@ body .md-content ul li,
   font-optical-sizing: auto;
   font-weight: 400 !important;
   font-style: var(--default-font-style);
-  font-size: 29px !important;
+  font-size: 32px !important;
   text-transform: none;
   text-decoration: none;
   line-height: 1.2rem;
@@ -121,10 +120,22 @@ body .md-content ul li,
 .md-content h6 {
   font-family: var(--secondary-font);
   font-optical-sizing: auto;
-  font-size: 25px !important;
+  font-size: 30px !important;
   font-style: var(--default-font-style);
   font-weight: 600;
-  line-height: 1.4rem;
+  line-height: 1.2rem;
+}
+
+/* ????????????????????? */
+.md-typeset h5, .md-typeset h6 {
+  font-family: var(--secondary-font);
+  font-size: 0.8em;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.md-content h5 i {
+  line-height: 1.5;
 }
 
 /* -------------------------- PARAGRAPH ELEMENTS (Markdown) -----------------------------*/
@@ -244,7 +255,8 @@ b {
 /* Span ------------- unused */
 .md-content p span {
   font-family: var(--secondary-font);
-  font-size: 25.5px;
+  font-size: 20px;
+  font-style: italic;
 }
 
 /* Cite ----------------- unused */

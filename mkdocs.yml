@@ -46,10 +46,10 @@ nav:
   - <i class="hgi-stroke hgi-user"></i> Digital Accounts:
     - <i class="hgi-stroke hgi-authorized"></i> Authentication: pages/digital-accounts/authentication/index.md
 extra_css:
-  - css/themes/dark/dark-markdown.css
+  - css/themes/dark/color-pallete.css
   - css/themes/dark/dark-navigation.css
   - css/base/typography.css
-  - css/layouts/desktop/elements.css
+  - css/layouts/desktop/markdown-elements.css
   - https://cdn.jsdelivr.net/gh/iconoir-icons/iconoir@main/css/iconoir.css
   - https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css
   - https://cdn.materialdesignicons.com/6.4.95/css/materialdesignicons.min.css
